@@ -1,0 +1,1346 @@
+<style type="text/css">
+#T_4eb0a caption {
+  caption-side: top;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px 0;
+}
+#T_4eb0a th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+#T_4eb0a td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+</style>
+<table id="T_4eb0a">
+  <caption>Data Dictionary</caption>
+  <thead>
+    <tr>
+      <th id="T_4eb0a_level0_col0" class="col_heading level0 col0" >name</th>
+      <th id="T_4eb0a_level0_col1" class="col_heading level0 col1" >role</th>
+      <th id="T_4eb0a_level0_col2" class="col_heading level0 col2" >type</th>
+      <th id="T_4eb0a_level0_col3" class="col_heading level0 col3" >demographic</th>
+      <th id="T_4eb0a_level0_col4" class="col_heading level0 col4" >description</th>
+      <th id="T_4eb0a_level0_col5" class="col_heading level0 col5" >units</th>
+      <th id="T_4eb0a_level0_col6" class="col_heading level0 col6" >missing_values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_4eb0a_row0_col0" class="data row0 col0" >ID</td>
+      <td id="T_4eb0a_row0_col1" class="data row0 col1" >ID</td>
+      <td id="T_4eb0a_row0_col2" class="data row0 col2" >Integer</td>
+      <td id="T_4eb0a_row0_col3" class="data row0 col3" >nan</td>
+      <td id="T_4eb0a_row0_col4" class="data row0 col4" >Record ID (ID): Unique identifier. Cannot be related to participant. It can be used for reference only.</td>
+      <td id="T_4eb0a_row0_col5" class="data row0 col5" >nan</td>
+      <td id="T_4eb0a_row0_col6" class="data row0 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row1_col0" class="data row1 col0" >AGE</td>
+      <td id="T_4eb0a_row1_col1" class="data row1 col1" >Feature</td>
+      <td id="T_4eb0a_row1_col2" class="data row1 col2" >Integer</td>
+      <td id="T_4eb0a_row1_col3" class="data row1 col3" >Age</td>
+      <td id="T_4eb0a_row1_col4" class="data row1 col4" >Age of patient.</td>
+      <td id="T_4eb0a_row1_col5" class="data row1 col5" >nan</td>
+      <td id="T_4eb0a_row1_col6" class="data row1 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row2_col0" class="data row2 col0" >SEX</td>
+      <td id="T_4eb0a_row2_col1" class="data row2 col1" >Feature</td>
+      <td id="T_4eb0a_row2_col2" class="data row2 col2" >Binary</td>
+      <td id="T_4eb0a_row2_col3" class="data row2 col3" >Sex</td>
+      <td id="T_4eb0a_row2_col4" class="data row2 col4" >0: female, 1: male</td>
+      <td id="T_4eb0a_row2_col5" class="data row2 col5" >nan</td>
+      <td id="T_4eb0a_row2_col6" class="data row2 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row3_col0" class="data row3 col0" >INF_ANAM</td>
+      <td id="T_4eb0a_row3_col1" class="data row3 col1" >Feature</td>
+      <td id="T_4eb0a_row3_col2" class="data row3 col2" >Categorical</td>
+      <td id="T_4eb0a_row3_col3" class="data row3 col3" >nan</td>
+      <td id="T_4eb0a_row3_col4" class="data row3 col4" >Quantity of myocardial infarctions in the anamnesis. 
+
+0: zero
+
+1: one
+
+2: two
+
+3: three and more</td>
+      <td id="T_4eb0a_row3_col5" class="data row3 col5" >nan</td>
+      <td id="T_4eb0a_row3_col6" class="data row3 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row4_col0" class="data row4 col0" >STENOK_AN</td>
+      <td id="T_4eb0a_row4_col1" class="data row4 col1" >Feature</td>
+      <td id="T_4eb0a_row4_col2" class="data row4 col2" >Categorical</td>
+      <td id="T_4eb0a_row4_col3" class="data row4 col3" >nan</td>
+      <td id="T_4eb0a_row4_col4" class="data row4 col4" >Exertional angina pectoris in the anamnesis. 
+
+0: never
+
+1: during the last year 
+
+2: one year ago
+
+3: two years ago
+
+4: three years ago
+
+5: 4-5 years ago</td>
+      <td id="T_4eb0a_row4_col5" class="data row4 col5" >nan</td>
+      <td id="T_4eb0a_row4_col6" class="data row4 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row5_col0" class="data row5 col0" >FK_STENOK</td>
+      <td id="T_4eb0a_row5_col1" class="data row5 col1" >Feature</td>
+      <td id="T_4eb0a_row5_col2" class="data row5 col2" >Categorical</td>
+      <td id="T_4eb0a_row5_col3" class="data row5 col3" >nan</td>
+      <td id="T_4eb0a_row5_col4" class="data row5 col4" >Functional class (FC) of angina pectoris in the last year. 
+
+0: there is no angina pectoris
+
+1: I FC
+
+2: II FC
+
+3: III FC
+
+4: IV FC</td>
+      <td id="T_4eb0a_row5_col5" class="data row5 col5" >nan</td>
+      <td id="T_4eb0a_row5_col6" class="data row5 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row6_col0" class="data row6 col0" >IBS_POST</td>
+      <td id="T_4eb0a_row6_col1" class="data row6 col1" >Feature</td>
+      <td id="T_4eb0a_row6_col2" class="data row6 col2" >Categorical</td>
+      <td id="T_4eb0a_row6_col3" class="data row6 col3" >nan</td>
+      <td id="T_4eb0a_row6_col4" class="data row6 col4" >Coronary heart disease (CHD) in recent weeks, days before admission to hospital 
+
+0: none
+
+1: exertional angina pectoris
+
+2: unstable angina pectoris</td>
+      <td id="T_4eb0a_row6_col5" class="data row6 col5" >nan</td>
+      <td id="T_4eb0a_row6_col6" class="data row6 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row7_col0" class="data row7 col0" >IBS_NASL</td>
+      <td id="T_4eb0a_row7_col1" class="data row7 col1" >Feature</td>
+      <td id="T_4eb0a_row7_col2" class="data row7 col2" >Binary</td>
+      <td id="T_4eb0a_row7_col3" class="data row7 col3" >nan</td>
+      <td id="T_4eb0a_row7_col4" class="data row7 col4" >Heredity on CHD
+
+0: isn't burdened
+
+1: burdened</td>
+      <td id="T_4eb0a_row7_col5" class="data row7 col5" >nan</td>
+      <td id="T_4eb0a_row7_col6" class="data row7 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row8_col0" class="data row8 col0" >GB</td>
+      <td id="T_4eb0a_row8_col1" class="data row8 col1" >Feature</td>
+      <td id="T_4eb0a_row8_col2" class="data row8 col2" >Categorical</td>
+      <td id="T_4eb0a_row8_col3" class="data row8 col3" >nan</td>
+      <td id="T_4eb0a_row8_col4" class="data row8 col4" >Presence of an essential hypertension 
+
+0: there is no essential hypertension 
+
+1: Stage 1 
+
+2: Stage 2
+
+3: Stage 3</td>
+      <td id="T_4eb0a_row8_col5" class="data row8 col5" >nan</td>
+      <td id="T_4eb0a_row8_col6" class="data row8 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row9_col0" class="data row9 col0" >SIM_GIPERT</td>
+      <td id="T_4eb0a_row9_col1" class="data row9 col1" >Feature</td>
+      <td id="T_4eb0a_row9_col2" class="data row9 col2" >Binary</td>
+      <td id="T_4eb0a_row9_col3" class="data row9 col3" >nan</td>
+      <td id="T_4eb0a_row9_col4" class="data row9 col4" >Symptomatic hypertension</td>
+      <td id="T_4eb0a_row9_col5" class="data row9 col5" >nan</td>
+      <td id="T_4eb0a_row9_col6" class="data row9 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row10_col0" class="data row10 col0" >DLIT_AG</td>
+      <td id="T_4eb0a_row10_col1" class="data row10 col1" >Feature</td>
+      <td id="T_4eb0a_row10_col2" class="data row10 col2" >Categorical</td>
+      <td id="T_4eb0a_row10_col3" class="data row10 col3" >nan</td>
+      <td id="T_4eb0a_row10_col4" class="data row10 col4" >there was no arterial hypertension
+
+1: one year
+
+2: two years
+
+3: three years
+
+4: four years
+
+5: five years
+
+6: 6-10 years
+
+7: more than 10 years</td>
+      <td id="T_4eb0a_row10_col5" class="data row10 col5" >nan</td>
+      <td id="T_4eb0a_row10_col6" class="data row10 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row11_col0" class="data row11 col0" >ZSN_A</td>
+      <td id="T_4eb0a_row11_col1" class="data row11 col1" >Feature</td>
+      <td id="T_4eb0a_row11_col2" class="data row11 col2" >Categorical</td>
+      <td id="T_4eb0a_row11_col3" class="data row11 col3" >nan</td>
+      <td id="T_4eb0a_row11_col4" class="data row11 col4" >Presence of chronic Heart failure (HF) in the anamnesis: Partially ordered attribute: there are two lines of severities:
+
+0<1<2<4,
+
+0<1<3<4.
+
+State 4 means simultaneous states 2 and 3
+
+
+
+0: there is no chronic heart failure
+
+1: I stage
+
+2: II stage (heart failure due to right 
+
+ventricular systolic dysfunction)
+
+3: II stage (heart failure due to left 
+
+ventricular systolic dysfunction)
+
+4: IIB stage (heart failure due to left and
+
+ right ventricular systolic dysfunction)</td>
+      <td id="T_4eb0a_row11_col5" class="data row11 col5" >nan</td>
+      <td id="T_4eb0a_row11_col6" class="data row11 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row12_col0" class="data row12 col0" >nr_11</td>
+      <td id="T_4eb0a_row12_col1" class="data row12 col1" >Feature</td>
+      <td id="T_4eb0a_row12_col2" class="data row12 col2" >Binary</td>
+      <td id="T_4eb0a_row12_col3" class="data row12 col3" >nan</td>
+      <td id="T_4eb0a_row12_col4" class="data row12 col4" >Observing of arrhythmia in the anamnesis</td>
+      <td id="T_4eb0a_row12_col5" class="data row12 col5" >nan</td>
+      <td id="T_4eb0a_row12_col6" class="data row12 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row13_col0" class="data row13 col0" >nr_01</td>
+      <td id="T_4eb0a_row13_col1" class="data row13 col1" >Feature</td>
+      <td id="T_4eb0a_row13_col2" class="data row13 col2" >Binary</td>
+      <td id="T_4eb0a_row13_col3" class="data row13 col3" >nan</td>
+      <td id="T_4eb0a_row13_col4" class="data row13 col4" >Premature atrial contractions in the anamnesis</td>
+      <td id="T_4eb0a_row13_col5" class="data row13 col5" >nan</td>
+      <td id="T_4eb0a_row13_col6" class="data row13 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row14_col0" class="data row14 col0" >nr_02</td>
+      <td id="T_4eb0a_row14_col1" class="data row14 col1" >Feature</td>
+      <td id="T_4eb0a_row14_col2" class="data row14 col2" >Binary</td>
+      <td id="T_4eb0a_row14_col3" class="data row14 col3" >nan</td>
+      <td id="T_4eb0a_row14_col4" class="data row14 col4" >Premature ventricular contractions in the anamnesis</td>
+      <td id="T_4eb0a_row14_col5" class="data row14 col5" >nan</td>
+      <td id="T_4eb0a_row14_col6" class="data row14 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row15_col0" class="data row15 col0" >nr_03</td>
+      <td id="T_4eb0a_row15_col1" class="data row15 col1" >Feature</td>
+      <td id="T_4eb0a_row15_col2" class="data row15 col2" >Binary</td>
+      <td id="T_4eb0a_row15_col3" class="data row15 col3" >nan</td>
+      <td id="T_4eb0a_row15_col4" class="data row15 col4" >Paroxysms of atrial fibrillation in the anamnesis</td>
+      <td id="T_4eb0a_row15_col5" class="data row15 col5" >nan</td>
+      <td id="T_4eb0a_row15_col6" class="data row15 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row16_col0" class="data row16 col0" >nr_04</td>
+      <td id="T_4eb0a_row16_col1" class="data row16 col1" >Feature</td>
+      <td id="T_4eb0a_row16_col2" class="data row16 col2" >Binary</td>
+      <td id="T_4eb0a_row16_col3" class="data row16 col3" >nan</td>
+      <td id="T_4eb0a_row16_col4" class="data row16 col4" >A persistent form of atrial fibrillation in the anamnesis</td>
+      <td id="T_4eb0a_row16_col5" class="data row16 col5" >nan</td>
+      <td id="T_4eb0a_row16_col6" class="data row16 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row17_col0" class="data row17 col0" >nr_07</td>
+      <td id="T_4eb0a_row17_col1" class="data row17 col1" >Feature</td>
+      <td id="T_4eb0a_row17_col2" class="data row17 col2" >Binary</td>
+      <td id="T_4eb0a_row17_col3" class="data row17 col3" >nan</td>
+      <td id="T_4eb0a_row17_col4" class="data row17 col4" >Ventricular fibrillation in the anamnesis</td>
+      <td id="T_4eb0a_row17_col5" class="data row17 col5" >nan</td>
+      <td id="T_4eb0a_row17_col6" class="data row17 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row18_col0" class="data row18 col0" >nr_08</td>
+      <td id="T_4eb0a_row18_col1" class="data row18 col1" >Feature</td>
+      <td id="T_4eb0a_row18_col2" class="data row18 col2" >Binary</td>
+      <td id="T_4eb0a_row18_col3" class="data row18 col3" >nan</td>
+      <td id="T_4eb0a_row18_col4" class="data row18 col4" >Ventricular paroxysmal tachycardia in the anamnesis</td>
+      <td id="T_4eb0a_row18_col5" class="data row18 col5" >nan</td>
+      <td id="T_4eb0a_row18_col6" class="data row18 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row19_col0" class="data row19 col0" >np_01</td>
+      <td id="T_4eb0a_row19_col1" class="data row19 col1" >Feature</td>
+      <td id="T_4eb0a_row19_col2" class="data row19 col2" >Binary</td>
+      <td id="T_4eb0a_row19_col3" class="data row19 col3" >nan</td>
+      <td id="T_4eb0a_row19_col4" class="data row19 col4" >First-degree AV block in the anamnesis</td>
+      <td id="T_4eb0a_row19_col5" class="data row19 col5" >nan</td>
+      <td id="T_4eb0a_row19_col6" class="data row19 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row20_col0" class="data row20 col0" >np_04</td>
+      <td id="T_4eb0a_row20_col1" class="data row20 col1" >Feature</td>
+      <td id="T_4eb0a_row20_col2" class="data row20 col2" >Binary</td>
+      <td id="T_4eb0a_row20_col3" class="data row20 col3" >nan</td>
+      <td id="T_4eb0a_row20_col4" class="data row20 col4" >Third-degree AV block in the anamnesis</td>
+      <td id="T_4eb0a_row20_col5" class="data row20 col5" >nan</td>
+      <td id="T_4eb0a_row20_col6" class="data row20 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row21_col0" class="data row21 col0" >np_05</td>
+      <td id="T_4eb0a_row21_col1" class="data row21 col1" >Feature</td>
+      <td id="T_4eb0a_row21_col2" class="data row21 col2" >Binary</td>
+      <td id="T_4eb0a_row21_col3" class="data row21 col3" >nan</td>
+      <td id="T_4eb0a_row21_col4" class="data row21 col4" >LBBB (anterior branch) in the anamnesis</td>
+      <td id="T_4eb0a_row21_col5" class="data row21 col5" >nan</td>
+      <td id="T_4eb0a_row21_col6" class="data row21 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row22_col0" class="data row22 col0" >np_07</td>
+      <td id="T_4eb0a_row22_col1" class="data row22 col1" >Feature</td>
+      <td id="T_4eb0a_row22_col2" class="data row22 col2" >Binary</td>
+      <td id="T_4eb0a_row22_col3" class="data row22 col3" >nan</td>
+      <td id="T_4eb0a_row22_col4" class="data row22 col4" >Incomplete LBBB in the anamnesis</td>
+      <td id="T_4eb0a_row22_col5" class="data row22 col5" >nan</td>
+      <td id="T_4eb0a_row22_col6" class="data row22 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row23_col0" class="data row23 col0" >np_08</td>
+      <td id="T_4eb0a_row23_col1" class="data row23 col1" >Feature</td>
+      <td id="T_4eb0a_row23_col2" class="data row23 col2" >Binary</td>
+      <td id="T_4eb0a_row23_col3" class="data row23 col3" >nan</td>
+      <td id="T_4eb0a_row23_col4" class="data row23 col4" >Complete LBBB in the anamnesis </td>
+      <td id="T_4eb0a_row23_col5" class="data row23 col5" >nan</td>
+      <td id="T_4eb0a_row23_col6" class="data row23 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row24_col0" class="data row24 col0" >np_09</td>
+      <td id="T_4eb0a_row24_col1" class="data row24 col1" >Feature</td>
+      <td id="T_4eb0a_row24_col2" class="data row24 col2" >Binary</td>
+      <td id="T_4eb0a_row24_col3" class="data row24 col3" >nan</td>
+      <td id="T_4eb0a_row24_col4" class="data row24 col4" >Incomplete RBBB in the anamnesis</td>
+      <td id="T_4eb0a_row24_col5" class="data row24 col5" >nan</td>
+      <td id="T_4eb0a_row24_col6" class="data row24 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row25_col0" class="data row25 col0" >np_10</td>
+      <td id="T_4eb0a_row25_col1" class="data row25 col1" >Feature</td>
+      <td id="T_4eb0a_row25_col2" class="data row25 col2" >Binary</td>
+      <td id="T_4eb0a_row25_col3" class="data row25 col3" >nan</td>
+      <td id="T_4eb0a_row25_col4" class="data row25 col4" >Complete RBBB in the anamnesis</td>
+      <td id="T_4eb0a_row25_col5" class="data row25 col5" >nan</td>
+      <td id="T_4eb0a_row25_col6" class="data row25 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row26_col0" class="data row26 col0" >endocr_01</td>
+      <td id="T_4eb0a_row26_col1" class="data row26 col1" >Feature</td>
+      <td id="T_4eb0a_row26_col2" class="data row26 col2" >Binary</td>
+      <td id="T_4eb0a_row26_col3" class="data row26 col3" >nan</td>
+      <td id="T_4eb0a_row26_col4" class="data row26 col4" >Diabetes mellitus in the anamnesis</td>
+      <td id="T_4eb0a_row26_col5" class="data row26 col5" >nan</td>
+      <td id="T_4eb0a_row26_col6" class="data row26 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row27_col0" class="data row27 col0" >endocr_02</td>
+      <td id="T_4eb0a_row27_col1" class="data row27 col1" >Feature</td>
+      <td id="T_4eb0a_row27_col2" class="data row27 col2" >Binary</td>
+      <td id="T_4eb0a_row27_col3" class="data row27 col3" >nan</td>
+      <td id="T_4eb0a_row27_col4" class="data row27 col4" >Obesity in the anamnesis</td>
+      <td id="T_4eb0a_row27_col5" class="data row27 col5" >nan</td>
+      <td id="T_4eb0a_row27_col6" class="data row27 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row28_col0" class="data row28 col0" >endocr_03</td>
+      <td id="T_4eb0a_row28_col1" class="data row28 col1" >Feature</td>
+      <td id="T_4eb0a_row28_col2" class="data row28 col2" >Binary</td>
+      <td id="T_4eb0a_row28_col3" class="data row28 col3" >nan</td>
+      <td id="T_4eb0a_row28_col4" class="data row28 col4" >Thyrotoxicosis in the anamnesis</td>
+      <td id="T_4eb0a_row28_col5" class="data row28 col5" >nan</td>
+      <td id="T_4eb0a_row28_col6" class="data row28 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row29_col0" class="data row29 col0" >zab_leg_01</td>
+      <td id="T_4eb0a_row29_col1" class="data row29 col1" >Feature</td>
+      <td id="T_4eb0a_row29_col2" class="data row29 col2" >Binary</td>
+      <td id="T_4eb0a_row29_col3" class="data row29 col3" >nan</td>
+      <td id="T_4eb0a_row29_col4" class="data row29 col4" >Chronic bronchitis in the anamnesis</td>
+      <td id="T_4eb0a_row29_col5" class="data row29 col5" >nan</td>
+      <td id="T_4eb0a_row29_col6" class="data row29 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row30_col0" class="data row30 col0" >zab_leg_02</td>
+      <td id="T_4eb0a_row30_col1" class="data row30 col1" >Feature</td>
+      <td id="T_4eb0a_row30_col2" class="data row30 col2" >Binary</td>
+      <td id="T_4eb0a_row30_col3" class="data row30 col3" >nan</td>
+      <td id="T_4eb0a_row30_col4" class="data row30 col4" >Obstructive chronic bronchitis in the anamnesis</td>
+      <td id="T_4eb0a_row30_col5" class="data row30 col5" >nan</td>
+      <td id="T_4eb0a_row30_col6" class="data row30 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row31_col0" class="data row31 col0" >zab_leg_03</td>
+      <td id="T_4eb0a_row31_col1" class="data row31 col1" >Feature</td>
+      <td id="T_4eb0a_row31_col2" class="data row31 col2" >Binary</td>
+      <td id="T_4eb0a_row31_col3" class="data row31 col3" >nan</td>
+      <td id="T_4eb0a_row31_col4" class="data row31 col4" >Bronchial asthma in the anamnesis </td>
+      <td id="T_4eb0a_row31_col5" class="data row31 col5" >nan</td>
+      <td id="T_4eb0a_row31_col6" class="data row31 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row32_col0" class="data row32 col0" >zab_leg_04</td>
+      <td id="T_4eb0a_row32_col1" class="data row32 col1" >Feature</td>
+      <td id="T_4eb0a_row32_col2" class="data row32 col2" >Binary</td>
+      <td id="T_4eb0a_row32_col3" class="data row32 col3" >nan</td>
+      <td id="T_4eb0a_row32_col4" class="data row32 col4" >Chronic pneumonia in the anamnesis</td>
+      <td id="T_4eb0a_row32_col5" class="data row32 col5" >nan</td>
+      <td id="T_4eb0a_row32_col6" class="data row32 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row33_col0" class="data row33 col0" >zab_leg_06</td>
+      <td id="T_4eb0a_row33_col1" class="data row33 col1" >Feature</td>
+      <td id="T_4eb0a_row33_col2" class="data row33 col2" >Binary</td>
+      <td id="T_4eb0a_row33_col3" class="data row33 col3" >nan</td>
+      <td id="T_4eb0a_row33_col4" class="data row33 col4" >Pulmonary tuberculosis in the anamnesis</td>
+      <td id="T_4eb0a_row33_col5" class="data row33 col5" >nan</td>
+      <td id="T_4eb0a_row33_col6" class="data row33 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row34_col0" class="data row34 col0" >S_AD_KBRIG</td>
+      <td id="T_4eb0a_row34_col1" class="data row34 col1" >Feature</td>
+      <td id="T_4eb0a_row34_col2" class="data row34 col2" >Integer</td>
+      <td id="T_4eb0a_row34_col3" class="data row34 col3" >nan</td>
+      <td id="T_4eb0a_row34_col4" class="data row34 col4" >Systolic blood pressure according to Emergency Cardiology Team </td>
+      <td id="T_4eb0a_row34_col5" class="data row34 col5" >mmHg</td>
+      <td id="T_4eb0a_row34_col6" class="data row34 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row35_col0" class="data row35 col0" >D_AD_KBRIG</td>
+      <td id="T_4eb0a_row35_col1" class="data row35 col1" >Feature</td>
+      <td id="T_4eb0a_row35_col2" class="data row35 col2" >Integer</td>
+      <td id="T_4eb0a_row35_col3" class="data row35 col3" >nan</td>
+      <td id="T_4eb0a_row35_col4" class="data row35 col4" >Diastolic blood pressure according to Emergency Cardiology Team</td>
+      <td id="T_4eb0a_row35_col5" class="data row35 col5" >mmHg</td>
+      <td id="T_4eb0a_row35_col6" class="data row35 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row36_col0" class="data row36 col0" >S_AD_ORIT</td>
+      <td id="T_4eb0a_row36_col1" class="data row36 col1" >Feature</td>
+      <td id="T_4eb0a_row36_col2" class="data row36 col2" >Integer</td>
+      <td id="T_4eb0a_row36_col3" class="data row36 col3" >nan</td>
+      <td id="T_4eb0a_row36_col4" class="data row36 col4" >Systolic blood pressure according to intensive care unit</td>
+      <td id="T_4eb0a_row36_col5" class="data row36 col5" >mmHg</td>
+      <td id="T_4eb0a_row36_col6" class="data row36 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row37_col0" class="data row37 col0" >D_AD_ORIT</td>
+      <td id="T_4eb0a_row37_col1" class="data row37 col1" >Feature</td>
+      <td id="T_4eb0a_row37_col2" class="data row37 col2" >Integer</td>
+      <td id="T_4eb0a_row37_col3" class="data row37 col3" >nan</td>
+      <td id="T_4eb0a_row37_col4" class="data row37 col4" >Diastolic blood pressure according to intensive care unit</td>
+      <td id="T_4eb0a_row37_col5" class="data row37 col5" >mmHg</td>
+      <td id="T_4eb0a_row37_col6" class="data row37 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row38_col0" class="data row38 col0" >O_L_POST</td>
+      <td id="T_4eb0a_row38_col1" class="data row38 col1" >Feature</td>
+      <td id="T_4eb0a_row38_col2" class="data row38 col2" >Binary</td>
+      <td id="T_4eb0a_row38_col3" class="data row38 col3" >nan</td>
+      <td id="T_4eb0a_row38_col4" class="data row38 col4" >Pulmonary edema at the time of admission to intensive care unit </td>
+      <td id="T_4eb0a_row38_col5" class="data row38 col5" >nan</td>
+      <td id="T_4eb0a_row38_col6" class="data row38 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row39_col0" class="data row39 col0" >K_SH_POST</td>
+      <td id="T_4eb0a_row39_col1" class="data row39 col1" >Feature</td>
+      <td id="T_4eb0a_row39_col2" class="data row39 col2" >Binary</td>
+      <td id="T_4eb0a_row39_col3" class="data row39 col3" >nan</td>
+      <td id="T_4eb0a_row39_col4" class="data row39 col4" >Cardiogenic shock at the time of admission to intensive care unit </td>
+      <td id="T_4eb0a_row39_col5" class="data row39 col5" >nan</td>
+      <td id="T_4eb0a_row39_col6" class="data row39 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row40_col0" class="data row40 col0" >MP_TP_POST</td>
+      <td id="T_4eb0a_row40_col1" class="data row40 col1" >Feature</td>
+      <td id="T_4eb0a_row40_col2" class="data row40 col2" >Binary</td>
+      <td id="T_4eb0a_row40_col3" class="data row40 col3" >nan</td>
+      <td id="T_4eb0a_row40_col4" class="data row40 col4" >Paroxysms of atrial fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)</td>
+      <td id="T_4eb0a_row40_col5" class="data row40 col5" >nan</td>
+      <td id="T_4eb0a_row40_col6" class="data row40 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row41_col0" class="data row41 col0" >SVT_POST</td>
+      <td id="T_4eb0a_row41_col1" class="data row41 col1" >Feature</td>
+      <td id="T_4eb0a_row41_col2" class="data row41 col2" >Binary</td>
+      <td id="T_4eb0a_row41_col3" class="data row41 col3" >nan</td>
+      <td id="T_4eb0a_row41_col4" class="data row41 col4" >Paroxysms of supraventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)</td>
+      <td id="T_4eb0a_row41_col5" class="data row41 col5" >nan</td>
+      <td id="T_4eb0a_row41_col6" class="data row41 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row42_col0" class="data row42 col0" >GT_POST</td>
+      <td id="T_4eb0a_row42_col1" class="data row42 col1" >Feature</td>
+      <td id="T_4eb0a_row42_col2" class="data row42 col2" >Binary</td>
+      <td id="T_4eb0a_row42_col3" class="data row42 col3" >nan</td>
+      <td id="T_4eb0a_row42_col4" class="data row42 col4" >Paroxysms of ventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)</td>
+      <td id="T_4eb0a_row42_col5" class="data row42 col5" >nan</td>
+      <td id="T_4eb0a_row42_col6" class="data row42 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row43_col0" class="data row43 col0" >FIB_G_POST</td>
+      <td id="T_4eb0a_row43_col1" class="data row43 col1" >Feature</td>
+      <td id="T_4eb0a_row43_col2" class="data row43 col2" >Binary</td>
+      <td id="T_4eb0a_row43_col3" class="data row43 col3" >nan</td>
+      <td id="T_4eb0a_row43_col4" class="data row43 col4" >Ventricular fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)</td>
+      <td id="T_4eb0a_row43_col5" class="data row43 col5" >nan</td>
+      <td id="T_4eb0a_row43_col6" class="data row43 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row44_col0" class="data row44 col0" >ant_im</td>
+      <td id="T_4eb0a_row44_col1" class="data row44 col1" >Feature</td>
+      <td id="T_4eb0a_row44_col2" class="data row44 col2" >Categorical</td>
+      <td id="T_4eb0a_row44_col3" class="data row44 col3" >nan</td>
+      <td id="T_4eb0a_row44_col4" class="data row44 col4" >Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex</td>
+      <td id="T_4eb0a_row44_col5" class="data row44 col5" >nan</td>
+      <td id="T_4eb0a_row44_col6" class="data row44 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row45_col0" class="data row45 col0" >lat_im</td>
+      <td id="T_4eb0a_row45_col1" class="data row45 col1" >Feature</td>
+      <td id="T_4eb0a_row45_col2" class="data row45 col2" >Categorical</td>
+      <td id="T_4eb0a_row45_col3" class="data row45 col3" >nan</td>
+      <td id="T_4eb0a_row45_col4" class="data row45 col4" >Presence of a lateral myocardial infarction (left ventricular) (ECG changes in leads V5: V6 , I, AVL)
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex</td>
+      <td id="T_4eb0a_row45_col5" class="data row45 col5" >nan</td>
+      <td id="T_4eb0a_row45_col6" class="data row45 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row46_col0" class="data row46 col0" >inf_im</td>
+      <td id="T_4eb0a_row46_col1" class="data row46 col1" >Feature</td>
+      <td id="T_4eb0a_row46_col2" class="data row46 col2" >Categorical</td>
+      <td id="T_4eb0a_row46_col3" class="data row46 col3" >nan</td>
+      <td id="T_4eb0a_row46_col4" class="data row46 col4" >Presence of an inferior myocardial infarction (left ventricular) (ECG changes in leads III, AVF, II).
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex</td>
+      <td id="T_4eb0a_row46_col5" class="data row46 col5" >nan</td>
+      <td id="T_4eb0a_row46_col6" class="data row46 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row47_col0" class="data row47 col0" >post_im</td>
+      <td id="T_4eb0a_row47_col1" class="data row47 col1" >Feature</td>
+      <td id="T_4eb0a_row47_col2" class="data row47 col2" >Categorical</td>
+      <td id="T_4eb0a_row47_col3" class="data row47 col3" >nan</td>
+      <td id="T_4eb0a_row47_col4" class="data row47 col4" >Presence of a posterior myocardial infarction (left ventricular) (ECG changes in V7: V9, reciprocity changes in leads V1 – V3)
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex</td>
+      <td id="T_4eb0a_row47_col5" class="data row47 col5" >nan</td>
+      <td id="T_4eb0a_row47_col6" class="data row47 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row48_col0" class="data row48 col0" >IM_PG_P</td>
+      <td id="T_4eb0a_row48_col1" class="data row48 col1" >Feature</td>
+      <td id="T_4eb0a_row48_col2" class="data row48 col2" >Binary</td>
+      <td id="T_4eb0a_row48_col3" class="data row48 col3" >nan</td>
+      <td id="T_4eb0a_row48_col4" class="data row48 col4" >Presence of a right ventricular myocardial infarction</td>
+      <td id="T_4eb0a_row48_col5" class="data row48 col5" >nan</td>
+      <td id="T_4eb0a_row48_col6" class="data row48 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row49_col0" class="data row49 col0" >ritm_ecg_p_01</td>
+      <td id="T_4eb0a_row49_col1" class="data row49 col1" >Feature</td>
+      <td id="T_4eb0a_row49_col2" class="data row49 col2" >Binary</td>
+      <td id="T_4eb0a_row49_col3" class="data row49 col3" >nan</td>
+      <td id="T_4eb0a_row49_col4" class="data row49 col4" >ECG rhythm at the time of admission to hospital: sinus (with a heart rate 60-90)</td>
+      <td id="T_4eb0a_row49_col5" class="data row49 col5" >nan</td>
+      <td id="T_4eb0a_row49_col6" class="data row49 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row50_col0" class="data row50 col0" >ritm_ecg_p_02</td>
+      <td id="T_4eb0a_row50_col1" class="data row50 col1" >Feature</td>
+      <td id="T_4eb0a_row50_col2" class="data row50 col2" >Binary</td>
+      <td id="T_4eb0a_row50_col3" class="data row50 col3" >nan</td>
+      <td id="T_4eb0a_row50_col4" class="data row50 col4" >ECG rhythm at the time of admission to hospital: atrial fibrillation</td>
+      <td id="T_4eb0a_row50_col5" class="data row50 col5" >nan</td>
+      <td id="T_4eb0a_row50_col6" class="data row50 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row51_col0" class="data row51 col0" >ritm_ecg_p_04</td>
+      <td id="T_4eb0a_row51_col1" class="data row51 col1" >Feature</td>
+      <td id="T_4eb0a_row51_col2" class="data row51 col2" >Binary</td>
+      <td id="T_4eb0a_row51_col3" class="data row51 col3" >nan</td>
+      <td id="T_4eb0a_row51_col4" class="data row51 col4" >ECG rhythm at the time of admission to hospital: atrial </td>
+      <td id="T_4eb0a_row51_col5" class="data row51 col5" >nan</td>
+      <td id="T_4eb0a_row51_col6" class="data row51 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row52_col0" class="data row52 col0" >ritm_ecg_p_06</td>
+      <td id="T_4eb0a_row52_col1" class="data row52 col1" >Feature</td>
+      <td id="T_4eb0a_row52_col2" class="data row52 col2" >Binary</td>
+      <td id="T_4eb0a_row52_col3" class="data row52 col3" >nan</td>
+      <td id="T_4eb0a_row52_col4" class="data row52 col4" >ECG rhythm at the time of admission to hospital: idioventricular</td>
+      <td id="T_4eb0a_row52_col5" class="data row52 col5" >nan</td>
+      <td id="T_4eb0a_row52_col6" class="data row52 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row53_col0" class="data row53 col0" >ritm_ecg_p_07</td>
+      <td id="T_4eb0a_row53_col1" class="data row53 col1" >Feature</td>
+      <td id="T_4eb0a_row53_col2" class="data row53 col2" >Binary</td>
+      <td id="T_4eb0a_row53_col3" class="data row53 col3" >nan</td>
+      <td id="T_4eb0a_row53_col4" class="data row53 col4" >ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia) </td>
+      <td id="T_4eb0a_row53_col5" class="data row53 col5" >nan</td>
+      <td id="T_4eb0a_row53_col6" class="data row53 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row54_col0" class="data row54 col0" >ritm_ecg_p_08</td>
+      <td id="T_4eb0a_row54_col1" class="data row54 col1" >Feature</td>
+      <td id="T_4eb0a_row54_col2" class="data row54 col2" >Binary</td>
+      <td id="T_4eb0a_row54_col3" class="data row54 col3" >nan</td>
+      <td id="T_4eb0a_row54_col4" class="data row54 col4" >ECG rhythm at the time of admission to hospital: sinus with a heart rate below 60 (bradycardia)</td>
+      <td id="T_4eb0a_row54_col5" class="data row54 col5" >nan</td>
+      <td id="T_4eb0a_row54_col6" class="data row54 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row55_col0" class="data row55 col0" >n_r_ecg_p_01</td>
+      <td id="T_4eb0a_row55_col1" class="data row55 col1" >Feature</td>
+      <td id="T_4eb0a_row55_col2" class="data row55 col2" >Binary</td>
+      <td id="T_4eb0a_row55_col3" class="data row55 col3" >nan</td>
+      <td id="T_4eb0a_row55_col4" class="data row55 col4" >Premature atrial contractions on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row55_col5" class="data row55 col5" >nan</td>
+      <td id="T_4eb0a_row55_col6" class="data row55 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row56_col0" class="data row56 col0" >n_r_ecg_p_02</td>
+      <td id="T_4eb0a_row56_col1" class="data row56 col1" >Feature</td>
+      <td id="T_4eb0a_row56_col2" class="data row56 col2" >Binary</td>
+      <td id="T_4eb0a_row56_col3" class="data row56 col3" >nan</td>
+      <td id="T_4eb0a_row56_col4" class="data row56 col4" >Frequent premature atrial contractions on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row56_col5" class="data row56 col5" >nan</td>
+      <td id="T_4eb0a_row56_col6" class="data row56 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row57_col0" class="data row57 col0" >n_r_ecg_p_03</td>
+      <td id="T_4eb0a_row57_col1" class="data row57 col1" >Feature</td>
+      <td id="T_4eb0a_row57_col2" class="data row57 col2" >Binary</td>
+      <td id="T_4eb0a_row57_col3" class="data row57 col3" >nan</td>
+      <td id="T_4eb0a_row57_col4" class="data row57 col4" >Premature ventricular contractions on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row57_col5" class="data row57 col5" >nan</td>
+      <td id="T_4eb0a_row57_col6" class="data row57 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row58_col0" class="data row58 col0" >n_r_ecg_p_04</td>
+      <td id="T_4eb0a_row58_col1" class="data row58 col1" >Feature</td>
+      <td id="T_4eb0a_row58_col2" class="data row58 col2" >Binary</td>
+      <td id="T_4eb0a_row58_col3" class="data row58 col3" >nan</td>
+      <td id="T_4eb0a_row58_col4" class="data row58 col4" >Frequent premature ventricular contractions on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row58_col5" class="data row58 col5" >nan</td>
+      <td id="T_4eb0a_row58_col6" class="data row58 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row59_col0" class="data row59 col0" >n_r_ecg_p_05</td>
+      <td id="T_4eb0a_row59_col1" class="data row59 col1" >Feature</td>
+      <td id="T_4eb0a_row59_col2" class="data row59 col2" >Binary</td>
+      <td id="T_4eb0a_row59_col3" class="data row59 col3" >nan</td>
+      <td id="T_4eb0a_row59_col4" class="data row59 col4" >Paroxysms of atrial fibrillation on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row59_col5" class="data row59 col5" >nan</td>
+      <td id="T_4eb0a_row59_col6" class="data row59 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row60_col0" class="data row60 col0" >n_r_ecg_p_06</td>
+      <td id="T_4eb0a_row60_col1" class="data row60 col1" >Feature</td>
+      <td id="T_4eb0a_row60_col2" class="data row60 col2" >Binary</td>
+      <td id="T_4eb0a_row60_col3" class="data row60 col3" >nan</td>
+      <td id="T_4eb0a_row60_col4" class="data row60 col4" >Persistent form of atrial fibrillation on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row60_col5" class="data row60 col5" >nan</td>
+      <td id="T_4eb0a_row60_col6" class="data row60 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row61_col0" class="data row61 col0" >n_r_ecg_p_08</td>
+      <td id="T_4eb0a_row61_col1" class="data row61 col1" >Feature</td>
+      <td id="T_4eb0a_row61_col2" class="data row61 col2" >Binary</td>
+      <td id="T_4eb0a_row61_col3" class="data row61 col3" >nan</td>
+      <td id="T_4eb0a_row61_col4" class="data row61 col4" >Paroxysms of supraventricular tachycardia on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row61_col5" class="data row61 col5" >nan</td>
+      <td id="T_4eb0a_row61_col6" class="data row61 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row62_col0" class="data row62 col0" >n_r_ecg_p_09</td>
+      <td id="T_4eb0a_row62_col1" class="data row62 col1" >Feature</td>
+      <td id="T_4eb0a_row62_col2" class="data row62 col2" >Binary</td>
+      <td id="T_4eb0a_row62_col3" class="data row62 col3" >nan</td>
+      <td id="T_4eb0a_row62_col4" class="data row62 col4" >Paroxysms of ventricular tachycardia on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row62_col5" class="data row62 col5" >nan</td>
+      <td id="T_4eb0a_row62_col6" class="data row62 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row63_col0" class="data row63 col0" >n_r_ecg_p_10</td>
+      <td id="T_4eb0a_row63_col1" class="data row63 col1" >Feature</td>
+      <td id="T_4eb0a_row63_col2" class="data row63 col2" >Binary</td>
+      <td id="T_4eb0a_row63_col3" class="data row63 col3" >nan</td>
+      <td id="T_4eb0a_row63_col4" class="data row63 col4" >Ventricular fibrillation on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row63_col5" class="data row63 col5" >nan</td>
+      <td id="T_4eb0a_row63_col6" class="data row63 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row64_col0" class="data row64 col0" >n_p_ecg_p_01</td>
+      <td id="T_4eb0a_row64_col1" class="data row64 col1" >Feature</td>
+      <td id="T_4eb0a_row64_col2" class="data row64 col2" >Binary</td>
+      <td id="T_4eb0a_row64_col3" class="data row64 col3" >nan</td>
+      <td id="T_4eb0a_row64_col4" class="data row64 col4" >Sinoatrial block on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row64_col5" class="data row64 col5" >nan</td>
+      <td id="T_4eb0a_row64_col6" class="data row64 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row65_col0" class="data row65 col0" >n_p_ecg_p_03</td>
+      <td id="T_4eb0a_row65_col1" class="data row65 col1" >Feature</td>
+      <td id="T_4eb0a_row65_col2" class="data row65 col2" >Binary</td>
+      <td id="T_4eb0a_row65_col3" class="data row65 col3" >nan</td>
+      <td id="T_4eb0a_row65_col4" class="data row65 col4" >First-degree AV block on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row65_col5" class="data row65 col5" >nan</td>
+      <td id="T_4eb0a_row65_col6" class="data row65 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row66_col0" class="data row66 col0" >n_p_ecg_p_04</td>
+      <td id="T_4eb0a_row66_col1" class="data row66 col1" >Feature</td>
+      <td id="T_4eb0a_row66_col2" class="data row66 col2" >Binary</td>
+      <td id="T_4eb0a_row66_col3" class="data row66 col3" >nan</td>
+      <td id="T_4eb0a_row66_col4" class="data row66 col4" >Type 1 Second-degree AV block (Mobitz I/Wenckebach) on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row66_col5" class="data row66 col5" >nan</td>
+      <td id="T_4eb0a_row66_col6" class="data row66 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row67_col0" class="data row67 col0" >n_p_ecg_p_05</td>
+      <td id="T_4eb0a_row67_col1" class="data row67 col1" >Feature</td>
+      <td id="T_4eb0a_row67_col2" class="data row67 col2" >Binary</td>
+      <td id="T_4eb0a_row67_col3" class="data row67 col3" >nan</td>
+      <td id="T_4eb0a_row67_col4" class="data row67 col4" >Type 2 Second-degree AV block (Mobitz II/Hay) on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row67_col5" class="data row67 col5" >nan</td>
+      <td id="T_4eb0a_row67_col6" class="data row67 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row68_col0" class="data row68 col0" >n_p_ecg_p_06</td>
+      <td id="T_4eb0a_row68_col1" class="data row68 col1" >Feature</td>
+      <td id="T_4eb0a_row68_col2" class="data row68 col2" >Binary</td>
+      <td id="T_4eb0a_row68_col3" class="data row68 col3" >nan</td>
+      <td id="T_4eb0a_row68_col4" class="data row68 col4" >Third-degree AV block on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row68_col5" class="data row68 col5" >nan</td>
+      <td id="T_4eb0a_row68_col6" class="data row68 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row69_col0" class="data row69 col0" >n_p_ecg_p_07</td>
+      <td id="T_4eb0a_row69_col1" class="data row69 col1" >Feature</td>
+      <td id="T_4eb0a_row69_col2" class="data row69 col2" >Binary</td>
+      <td id="T_4eb0a_row69_col3" class="data row69 col3" >nan</td>
+      <td id="T_4eb0a_row69_col4" class="data row69 col4" >LBBB (anterior branch) on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row69_col5" class="data row69 col5" >nan</td>
+      <td id="T_4eb0a_row69_col6" class="data row69 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row70_col0" class="data row70 col0" >n_p_ecg_p_08</td>
+      <td id="T_4eb0a_row70_col1" class="data row70 col1" >Feature</td>
+      <td id="T_4eb0a_row70_col2" class="data row70 col2" >Binary</td>
+      <td id="T_4eb0a_row70_col3" class="data row70 col3" >nan</td>
+      <td id="T_4eb0a_row70_col4" class="data row70 col4" >LBBB (posterior branch) on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row70_col5" class="data row70 col5" >nan</td>
+      <td id="T_4eb0a_row70_col6" class="data row70 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row71_col0" class="data row71 col0" >n_p_ecg_p_09</td>
+      <td id="T_4eb0a_row71_col1" class="data row71 col1" >Feature</td>
+      <td id="T_4eb0a_row71_col2" class="data row71 col2" >Binary</td>
+      <td id="T_4eb0a_row71_col3" class="data row71 col3" >nan</td>
+      <td id="T_4eb0a_row71_col4" class="data row71 col4" >Incomplete LBBB on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row71_col5" class="data row71 col5" >nan</td>
+      <td id="T_4eb0a_row71_col6" class="data row71 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row72_col0" class="data row72 col0" >n_p_ecg_p_10</td>
+      <td id="T_4eb0a_row72_col1" class="data row72 col1" >Feature</td>
+      <td id="T_4eb0a_row72_col2" class="data row72 col2" >Binary</td>
+      <td id="T_4eb0a_row72_col3" class="data row72 col3" >nan</td>
+      <td id="T_4eb0a_row72_col4" class="data row72 col4" >Complete LBBB on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row72_col5" class="data row72 col5" >nan</td>
+      <td id="T_4eb0a_row72_col6" class="data row72 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row73_col0" class="data row73 col0" >n_p_ecg_p_11</td>
+      <td id="T_4eb0a_row73_col1" class="data row73 col1" >Feature</td>
+      <td id="T_4eb0a_row73_col2" class="data row73 col2" >Binary</td>
+      <td id="T_4eb0a_row73_col3" class="data row73 col3" >nan</td>
+      <td id="T_4eb0a_row73_col4" class="data row73 col4" >Incomplete RBBB on ECG at the time of admission to hospital </td>
+      <td id="T_4eb0a_row73_col5" class="data row73 col5" >nan</td>
+      <td id="T_4eb0a_row73_col6" class="data row73 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row74_col0" class="data row74 col0" >n_p_ecg_p_12</td>
+      <td id="T_4eb0a_row74_col1" class="data row74 col1" >Feature</td>
+      <td id="T_4eb0a_row74_col2" class="data row74 col2" >Binary</td>
+      <td id="T_4eb0a_row74_col3" class="data row74 col3" >nan</td>
+      <td id="T_4eb0a_row74_col4" class="data row74 col4" >Complete RBBB on ECG at the time of admission to hospital</td>
+      <td id="T_4eb0a_row74_col5" class="data row74 col5" >nan</td>
+      <td id="T_4eb0a_row74_col6" class="data row74 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row75_col0" class="data row75 col0" >fibr_ter_01</td>
+      <td id="T_4eb0a_row75_col1" class="data row75 col1" >Feature</td>
+      <td id="T_4eb0a_row75_col2" class="data row75 col2" >Binary</td>
+      <td id="T_4eb0a_row75_col3" class="data row75 col3" >nan</td>
+      <td id="T_4eb0a_row75_col4" class="data row75 col4" >Fibrinolytic therapy by Сеliasum 750k</td>
+      <td id="T_4eb0a_row75_col5" class="data row75 col5" >nan</td>
+      <td id="T_4eb0a_row75_col6" class="data row75 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row76_col0" class="data row76 col0" >fibr_ter_02</td>
+      <td id="T_4eb0a_row76_col1" class="data row76 col1" >Feature</td>
+      <td id="T_4eb0a_row76_col2" class="data row76 col2" >Binary</td>
+      <td id="T_4eb0a_row76_col3" class="data row76 col3" >nan</td>
+      <td id="T_4eb0a_row76_col4" class="data row76 col4" >Fibrinolytic therapy by Сеliasum 1m IU</td>
+      <td id="T_4eb0a_row76_col5" class="data row76 col5" >nan</td>
+      <td id="T_4eb0a_row76_col6" class="data row76 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row77_col0" class="data row77 col0" >fibr_ter_03</td>
+      <td id="T_4eb0a_row77_col1" class="data row77 col1" >Feature</td>
+      <td id="T_4eb0a_row77_col2" class="data row77 col2" >Binary</td>
+      <td id="T_4eb0a_row77_col3" class="data row77 col3" >nan</td>
+      <td id="T_4eb0a_row77_col4" class="data row77 col4" >Fibrinolytic therapy by Сеliasum 3m IU</td>
+      <td id="T_4eb0a_row77_col5" class="data row77 col5" >nan</td>
+      <td id="T_4eb0a_row77_col6" class="data row77 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row78_col0" class="data row78 col0" >fibr_ter_05</td>
+      <td id="T_4eb0a_row78_col1" class="data row78 col1" >Feature</td>
+      <td id="T_4eb0a_row78_col2" class="data row78 col2" >Binary</td>
+      <td id="T_4eb0a_row78_col3" class="data row78 col3" >nan</td>
+      <td id="T_4eb0a_row78_col4" class="data row78 col4" >Fibrinolytic therapy by Streptase</td>
+      <td id="T_4eb0a_row78_col5" class="data row78 col5" >nan</td>
+      <td id="T_4eb0a_row78_col6" class="data row78 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row79_col0" class="data row79 col0" >fibr_ter_06</td>
+      <td id="T_4eb0a_row79_col1" class="data row79 col1" >Feature</td>
+      <td id="T_4eb0a_row79_col2" class="data row79 col2" >Binary</td>
+      <td id="T_4eb0a_row79_col3" class="data row79 col3" >nan</td>
+      <td id="T_4eb0a_row79_col4" class="data row79 col4" >Fibrinolytic therapy by Сеliasum 500k</td>
+      <td id="T_4eb0a_row79_col5" class="data row79 col5" >nan</td>
+      <td id="T_4eb0a_row79_col6" class="data row79 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row80_col0" class="data row80 col0" >fibr_ter_07</td>
+      <td id="T_4eb0a_row80_col1" class="data row80 col1" >Feature</td>
+      <td id="T_4eb0a_row80_col2" class="data row80 col2" >Binary</td>
+      <td id="T_4eb0a_row80_col3" class="data row80 col3" >nan</td>
+      <td id="T_4eb0a_row80_col4" class="data row80 col4" >Fibrinolytic therapy by Сеliasum 250k</td>
+      <td id="T_4eb0a_row80_col5" class="data row80 col5" >nan</td>
+      <td id="T_4eb0a_row80_col6" class="data row80 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row81_col0" class="data row81 col0" >fibr_ter_08</td>
+      <td id="T_4eb0a_row81_col1" class="data row81 col1" >Feature</td>
+      <td id="T_4eb0a_row81_col2" class="data row81 col2" >Binary</td>
+      <td id="T_4eb0a_row81_col3" class="data row81 col3" >nan</td>
+      <td id="T_4eb0a_row81_col4" class="data row81 col4" >Fibrinolytic therapy by Сеliasum 1.5m IU</td>
+      <td id="T_4eb0a_row81_col5" class="data row81 col5" >nan</td>
+      <td id="T_4eb0a_row81_col6" class="data row81 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row82_col0" class="data row82 col0" >GIPO_K</td>
+      <td id="T_4eb0a_row82_col1" class="data row82 col1" >Feature</td>
+      <td id="T_4eb0a_row82_col2" class="data row82 col2" >Binary</td>
+      <td id="T_4eb0a_row82_col3" class="data row82 col3" >nan</td>
+      <td id="T_4eb0a_row82_col4" class="data row82 col4" >Hypokalemia ( < 4 mmol/L)</td>
+      <td id="T_4eb0a_row82_col5" class="data row82 col5" >nan</td>
+      <td id="T_4eb0a_row82_col6" class="data row82 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row83_col0" class="data row83 col0" >K_BLOOD</td>
+      <td id="T_4eb0a_row83_col1" class="data row83 col1" >Feature</td>
+      <td id="T_4eb0a_row83_col2" class="data row83 col2" >Continuous</td>
+      <td id="T_4eb0a_row83_col3" class="data row83 col3" >nan</td>
+      <td id="T_4eb0a_row83_col4" class="data row83 col4" >Serum potassium content</td>
+      <td id="T_4eb0a_row83_col5" class="data row83 col5" >mmol/L</td>
+      <td id="T_4eb0a_row83_col6" class="data row83 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row84_col0" class="data row84 col0" >GIPER_NA</td>
+      <td id="T_4eb0a_row84_col1" class="data row84 col1" >Feature</td>
+      <td id="T_4eb0a_row84_col2" class="data row84 col2" >Binary</td>
+      <td id="T_4eb0a_row84_col3" class="data row84 col3" >nan</td>
+      <td id="T_4eb0a_row84_col4" class="data row84 col4" >Increase of sodium in serum (more than 150 mmol/L)</td>
+      <td id="T_4eb0a_row84_col5" class="data row84 col5" >nan</td>
+      <td id="T_4eb0a_row84_col6" class="data row84 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row85_col0" class="data row85 col0" >NA_BLOOD</td>
+      <td id="T_4eb0a_row85_col1" class="data row85 col1" >Feature</td>
+      <td id="T_4eb0a_row85_col2" class="data row85 col2" >Continuous</td>
+      <td id="T_4eb0a_row85_col3" class="data row85 col3" >nan</td>
+      <td id="T_4eb0a_row85_col4" class="data row85 col4" >Serum sodium content</td>
+      <td id="T_4eb0a_row85_col5" class="data row85 col5" >mmol/L</td>
+      <td id="T_4eb0a_row85_col6" class="data row85 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row86_col0" class="data row86 col0" >ALT_BLOOD</td>
+      <td id="T_4eb0a_row86_col1" class="data row86 col1" >Feature</td>
+      <td id="T_4eb0a_row86_col2" class="data row86 col2" >Continuous</td>
+      <td id="T_4eb0a_row86_col3" class="data row86 col3" >nan</td>
+      <td id="T_4eb0a_row86_col4" class="data row86 col4" >Serum AlAT content (ALT_BLOOD)</td>
+      <td id="T_4eb0a_row86_col5" class="data row86 col5" >IU/L</td>
+      <td id="T_4eb0a_row86_col6" class="data row86 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row87_col0" class="data row87 col0" >AST_BLOOD</td>
+      <td id="T_4eb0a_row87_col1" class="data row87 col1" >Feature</td>
+      <td id="T_4eb0a_row87_col2" class="data row87 col2" >Continuous</td>
+      <td id="T_4eb0a_row87_col3" class="data row87 col3" >nan</td>
+      <td id="T_4eb0a_row87_col4" class="data row87 col4" >Serum AsAT content</td>
+      <td id="T_4eb0a_row87_col5" class="data row87 col5" >IU/L</td>
+      <td id="T_4eb0a_row87_col6" class="data row87 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row88_col0" class="data row88 col0" >KFK_BLOOD</td>
+      <td id="T_4eb0a_row88_col1" class="data row88 col1" >Feature</td>
+      <td id="T_4eb0a_row88_col2" class="data row88 col2" >Continuous</td>
+      <td id="T_4eb0a_row88_col3" class="data row88 col3" >nan</td>
+      <td id="T_4eb0a_row88_col4" class="data row88 col4" >Serum CPK content</td>
+      <td id="T_4eb0a_row88_col5" class="data row88 col5" >IU/L</td>
+      <td id="T_4eb0a_row88_col6" class="data row88 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row89_col0" class="data row89 col0" >L_BLOOD</td>
+      <td id="T_4eb0a_row89_col1" class="data row89 col1" >Feature</td>
+      <td id="T_4eb0a_row89_col2" class="data row89 col2" >Continuous</td>
+      <td id="T_4eb0a_row89_col3" class="data row89 col3" >nan</td>
+      <td id="T_4eb0a_row89_col4" class="data row89 col4" >White blood cell count </td>
+      <td id="T_4eb0a_row89_col5" class="data row89 col5" >billions per liter</td>
+      <td id="T_4eb0a_row89_col6" class="data row89 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row90_col0" class="data row90 col0" >ROE</td>
+      <td id="T_4eb0a_row90_col1" class="data row90 col1" >Feature</td>
+      <td id="T_4eb0a_row90_col2" class="data row90 col2" >Continuous</td>
+      <td id="T_4eb0a_row90_col3" class="data row90 col3" >nan</td>
+      <td id="T_4eb0a_row90_col4" class="data row90 col4" >ESR (Erythrocyte sedimentation rate)</td>
+      <td id="T_4eb0a_row90_col5" class="data row90 col5" >мм</td>
+      <td id="T_4eb0a_row90_col6" class="data row90 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row91_col0" class="data row91 col0" >TIME_B_S</td>
+      <td id="T_4eb0a_row91_col1" class="data row91 col1" >Feature</td>
+      <td id="T_4eb0a_row91_col2" class="data row91 col2" >Categorical</td>
+      <td id="T_4eb0a_row91_col3" class="data row91 col3" >nan</td>
+      <td id="T_4eb0a_row91_col4" class="data row91 col4" >Time elapsed from the beginning of the attack of CHD to the hospital
+
+1: less than 2 hours
+
+2: 2-4 hours
+
+3: 4-6 hours
+
+4: 6-8 hours
+
+5: 8-12 hours
+
+6: 12-24 hours
+
+7: more than 1 days
+
+8: more than 2 days
+
+9: more than 3 days</td>
+      <td id="T_4eb0a_row91_col5" class="data row91 col5" >nan</td>
+      <td id="T_4eb0a_row91_col6" class="data row91 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row92_col0" class="data row92 col0" >R_AB_1_n</td>
+      <td id="T_4eb0a_row92_col1" class="data row92 col1" >Feature</td>
+      <td id="T_4eb0a_row92_col2" class="data row92 col2" >Categorical</td>
+      <td id="T_4eb0a_row92_col3" class="data row92 col3" >nan</td>
+      <td id="T_4eb0a_row92_col4" class="data row92 col4" >Relapse of the pain in the first hours of the hospital period
+
+0: there is no relapse
+
+1: only one
+
+2: 2 times
+
+3: 3 or more times </td>
+      <td id="T_4eb0a_row92_col5" class="data row92 col5" >nan</td>
+      <td id="T_4eb0a_row92_col6" class="data row92 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row93_col0" class="data row93 col0" >R_AB_2_n</td>
+      <td id="T_4eb0a_row93_col1" class="data row93 col1" >Feature</td>
+      <td id="T_4eb0a_row93_col2" class="data row93 col2" >Categorical</td>
+      <td id="T_4eb0a_row93_col3" class="data row93 col3" >nan</td>
+      <td id="T_4eb0a_row93_col4" class="data row93 col4" >Relapse of the pain in the second day of the hospital period
+
+0: there is no relapse
+
+1: only one
+
+2: 2 times
+
+3: 3 or more times </td>
+      <td id="T_4eb0a_row93_col5" class="data row93 col5" >nan</td>
+      <td id="T_4eb0a_row93_col6" class="data row93 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row94_col0" class="data row94 col0" >R_AB_3_n</td>
+      <td id="T_4eb0a_row94_col1" class="data row94 col1" >Feature</td>
+      <td id="T_4eb0a_row94_col2" class="data row94 col2" >Categorical</td>
+      <td id="T_4eb0a_row94_col3" class="data row94 col3" >nan</td>
+      <td id="T_4eb0a_row94_col4" class="data row94 col4" >Relapse of the pain in the third day of the hospital period
+
+0: there is no relapse
+
+1: only one
+
+2: 2 times
+
+3: 3 or more times </td>
+      <td id="T_4eb0a_row94_col5" class="data row94 col5" >nan</td>
+      <td id="T_4eb0a_row94_col6" class="data row94 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row95_col0" class="data row95 col0" >NA_KB</td>
+      <td id="T_4eb0a_row95_col1" class="data row95 col1" >Feature</td>
+      <td id="T_4eb0a_row95_col2" class="data row95 col2" >Binary</td>
+      <td id="T_4eb0a_row95_col3" class="data row95 col3" >nan</td>
+      <td id="T_4eb0a_row95_col4" class="data row95 col4" >Use of opioid drugs by the Emergency Cardiology Team</td>
+      <td id="T_4eb0a_row95_col5" class="data row95 col5" >nan</td>
+      <td id="T_4eb0a_row95_col6" class="data row95 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row96_col0" class="data row96 col0" >NOT_NA_KB</td>
+      <td id="T_4eb0a_row96_col1" class="data row96 col1" >Feature</td>
+      <td id="T_4eb0a_row96_col2" class="data row96 col2" >Binary</td>
+      <td id="T_4eb0a_row96_col3" class="data row96 col3" >nan</td>
+      <td id="T_4eb0a_row96_col4" class="data row96 col4" >Use of NSAIDs by the Emergency Cardiology Team </td>
+      <td id="T_4eb0a_row96_col5" class="data row96 col5" >nan</td>
+      <td id="T_4eb0a_row96_col6" class="data row96 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row97_col0" class="data row97 col0" >LID_KB</td>
+      <td id="T_4eb0a_row97_col1" class="data row97 col1" >Feature</td>
+      <td id="T_4eb0a_row97_col2" class="data row97 col2" >Binary</td>
+      <td id="T_4eb0a_row97_col3" class="data row97 col3" >nan</td>
+      <td id="T_4eb0a_row97_col4" class="data row97 col4" >Use of lidocaine by the Emergency Cardiology Team</td>
+      <td id="T_4eb0a_row97_col5" class="data row97 col5" >nan</td>
+      <td id="T_4eb0a_row97_col6" class="data row97 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row98_col0" class="data row98 col0" >NITR_S</td>
+      <td id="T_4eb0a_row98_col1" class="data row98 col1" >Feature</td>
+      <td id="T_4eb0a_row98_col2" class="data row98 col2" >Binary</td>
+      <td id="T_4eb0a_row98_col3" class="data row98 col3" >nan</td>
+      <td id="T_4eb0a_row98_col4" class="data row98 col4" >Use of liquid nitrates in the ICU</td>
+      <td id="T_4eb0a_row98_col5" class="data row98 col5" >nan</td>
+      <td id="T_4eb0a_row98_col6" class="data row98 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row99_col0" class="data row99 col0" >NA_R_1_n</td>
+      <td id="T_4eb0a_row99_col1" class="data row99 col1" >Feature</td>
+      <td id="T_4eb0a_row99_col2" class="data row99 col2" >Integer</td>
+      <td id="T_4eb0a_row99_col3" class="data row99 col3" >nan</td>
+      <td id="T_4eb0a_row99_col4" class="data row99 col4" >Use of opioid drugs in the ICU in the first hours of the hospital period </td>
+      <td id="T_4eb0a_row99_col5" class="data row99 col5" >nan</td>
+      <td id="T_4eb0a_row99_col6" class="data row99 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row100_col0" class="data row100 col0" >NA_R_2_n</td>
+      <td id="T_4eb0a_row100_col1" class="data row100 col1" >Feature</td>
+      <td id="T_4eb0a_row100_col2" class="data row100 col2" >Integer</td>
+      <td id="T_4eb0a_row100_col3" class="data row100 col3" >nan</td>
+      <td id="T_4eb0a_row100_col4" class="data row100 col4" >Use of opioid drugs in the ICU in the second day of the hospital period </td>
+      <td id="T_4eb0a_row100_col5" class="data row100 col5" >nan</td>
+      <td id="T_4eb0a_row100_col6" class="data row100 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row101_col0" class="data row101 col0" >NA_R_3_n</td>
+      <td id="T_4eb0a_row101_col1" class="data row101 col1" >Feature</td>
+      <td id="T_4eb0a_row101_col2" class="data row101 col2" >Integer</td>
+      <td id="T_4eb0a_row101_col3" class="data row101 col3" >nan</td>
+      <td id="T_4eb0a_row101_col4" class="data row101 col4" >Use of opioid drugs in the ICU in the third day of the hospital period </td>
+      <td id="T_4eb0a_row101_col5" class="data row101 col5" >nan</td>
+      <td id="T_4eb0a_row101_col6" class="data row101 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row102_col0" class="data row102 col0" >NOT_NA_1_n</td>
+      <td id="T_4eb0a_row102_col1" class="data row102 col1" >Feature</td>
+      <td id="T_4eb0a_row102_col2" class="data row102 col2" >Categorical</td>
+      <td id="T_4eb0a_row102_col3" class="data row102 col3" >nan</td>
+      <td id="T_4eb0a_row102_col4" class="data row102 col4" >Use of NSAIDs in the ICU in the first hours of the hospital period
+
+0: no
+
+1: once
+
+2: twice
+
+3: three times
+
+4: four or more times</td>
+      <td id="T_4eb0a_row102_col5" class="data row102 col5" >nan</td>
+      <td id="T_4eb0a_row102_col6" class="data row102 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row103_col0" class="data row103 col0" >NOT_NA_2_n</td>
+      <td id="T_4eb0a_row103_col1" class="data row103 col1" >Feature</td>
+      <td id="T_4eb0a_row103_col2" class="data row103 col2" >Integer</td>
+      <td id="T_4eb0a_row103_col3" class="data row103 col3" >nan</td>
+      <td id="T_4eb0a_row103_col4" class="data row103 col4" >Use of NSAIDs in the ICU in the second day of the hospital period </td>
+      <td id="T_4eb0a_row103_col5" class="data row103 col5" >nan</td>
+      <td id="T_4eb0a_row103_col6" class="data row103 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row104_col0" class="data row104 col0" >NOT_NA_3_n</td>
+      <td id="T_4eb0a_row104_col1" class="data row104 col1" >Feature</td>
+      <td id="T_4eb0a_row104_col2" class="data row104 col2" >Integer</td>
+      <td id="T_4eb0a_row104_col3" class="data row104 col3" >nan</td>
+      <td id="T_4eb0a_row104_col4" class="data row104 col4" >Use of NSAIDs in the ICU in the third day of the hospital period </td>
+      <td id="T_4eb0a_row104_col5" class="data row104 col5" >nan</td>
+      <td id="T_4eb0a_row104_col6" class="data row104 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row105_col0" class="data row105 col0" >LID_S_n</td>
+      <td id="T_4eb0a_row105_col1" class="data row105 col1" >Feature</td>
+      <td id="T_4eb0a_row105_col2" class="data row105 col2" >Binary</td>
+      <td id="T_4eb0a_row105_col3" class="data row105 col3" >nan</td>
+      <td id="T_4eb0a_row105_col4" class="data row105 col4" >Use of lidocaine in the ICU </td>
+      <td id="T_4eb0a_row105_col5" class="data row105 col5" >nan</td>
+      <td id="T_4eb0a_row105_col6" class="data row105 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row106_col0" class="data row106 col0" >B_BLOK_S_n</td>
+      <td id="T_4eb0a_row106_col1" class="data row106 col1" >Feature</td>
+      <td id="T_4eb0a_row106_col2" class="data row106 col2" >Binary</td>
+      <td id="T_4eb0a_row106_col3" class="data row106 col3" >nan</td>
+      <td id="T_4eb0a_row106_col4" class="data row106 col4" >Use of beta-blockers in the ICU</td>
+      <td id="T_4eb0a_row106_col5" class="data row106 col5" >nan</td>
+      <td id="T_4eb0a_row106_col6" class="data row106 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row107_col0" class="data row107 col0" >ANT_CA_S_n</td>
+      <td id="T_4eb0a_row107_col1" class="data row107 col1" >Feature</td>
+      <td id="T_4eb0a_row107_col2" class="data row107 col2" >Binary</td>
+      <td id="T_4eb0a_row107_col3" class="data row107 col3" >nan</td>
+      <td id="T_4eb0a_row107_col4" class="data row107 col4" >Use of calcium channel blockers in the ICU</td>
+      <td id="T_4eb0a_row107_col5" class="data row107 col5" >nan</td>
+      <td id="T_4eb0a_row107_col6" class="data row107 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row108_col0" class="data row108 col0" >GEPAR_S_n</td>
+      <td id="T_4eb0a_row108_col1" class="data row108 col1" >Feature</td>
+      <td id="T_4eb0a_row108_col2" class="data row108 col2" >Binary</td>
+      <td id="T_4eb0a_row108_col3" class="data row108 col3" >nan</td>
+      <td id="T_4eb0a_row108_col4" class="data row108 col4" >Use of а anticoagulants (heparin) in the ICU</td>
+      <td id="T_4eb0a_row108_col5" class="data row108 col5" >nan</td>
+      <td id="T_4eb0a_row108_col6" class="data row108 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row109_col0" class="data row109 col0" >ASP_S_n</td>
+      <td id="T_4eb0a_row109_col1" class="data row109 col1" >Feature</td>
+      <td id="T_4eb0a_row109_col2" class="data row109 col2" >Binary</td>
+      <td id="T_4eb0a_row109_col3" class="data row109 col3" >nan</td>
+      <td id="T_4eb0a_row109_col4" class="data row109 col4" >Use of acetylsalicylic acid in the ICU </td>
+      <td id="T_4eb0a_row109_col5" class="data row109 col5" >nan</td>
+      <td id="T_4eb0a_row109_col6" class="data row109 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row110_col0" class="data row110 col0" >TIKL_S_n</td>
+      <td id="T_4eb0a_row110_col1" class="data row110 col1" >Feature</td>
+      <td id="T_4eb0a_row110_col2" class="data row110 col2" >Binary</td>
+      <td id="T_4eb0a_row110_col3" class="data row110 col3" >nan</td>
+      <td id="T_4eb0a_row110_col4" class="data row110 col4" >Use of Ticlid in the ICU</td>
+      <td id="T_4eb0a_row110_col5" class="data row110 col5" >nan</td>
+      <td id="T_4eb0a_row110_col6" class="data row110 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row111_col0" class="data row111 col0" >TRENT_S_n</td>
+      <td id="T_4eb0a_row111_col1" class="data row111 col1" >Feature</td>
+      <td id="T_4eb0a_row111_col2" class="data row111 col2" >Binary</td>
+      <td id="T_4eb0a_row111_col3" class="data row111 col3" >nan</td>
+      <td id="T_4eb0a_row111_col4" class="data row111 col4" >Use of Trental in the ICU</td>
+      <td id="T_4eb0a_row111_col5" class="data row111 col5" >nan</td>
+      <td id="T_4eb0a_row111_col6" class="data row111 col6" >yes</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row112_col0" class="data row112 col0" >FIBR_PREDS</td>
+      <td id="T_4eb0a_row112_col1" class="data row112 col1" >Target</td>
+      <td id="T_4eb0a_row112_col2" class="data row112 col2" >Binary</td>
+      <td id="T_4eb0a_row112_col3" class="data row112 col3" >nan</td>
+      <td id="T_4eb0a_row112_col4" class="data row112 col4" >Atrial fibrillation</td>
+      <td id="T_4eb0a_row112_col5" class="data row112 col5" >nan</td>
+      <td id="T_4eb0a_row112_col6" class="data row112 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row113_col0" class="data row113 col0" >PREDS_TAH</td>
+      <td id="T_4eb0a_row113_col1" class="data row113 col1" >Target</td>
+      <td id="T_4eb0a_row113_col2" class="data row113 col2" >Binary</td>
+      <td id="T_4eb0a_row113_col3" class="data row113 col3" >nan</td>
+      <td id="T_4eb0a_row113_col4" class="data row113 col4" >Supraventricular tachycardia</td>
+      <td id="T_4eb0a_row113_col5" class="data row113 col5" >nan</td>
+      <td id="T_4eb0a_row113_col6" class="data row113 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row114_col0" class="data row114 col0" >JELUD_TAH</td>
+      <td id="T_4eb0a_row114_col1" class="data row114 col1" >Target</td>
+      <td id="T_4eb0a_row114_col2" class="data row114 col2" >Binary</td>
+      <td id="T_4eb0a_row114_col3" class="data row114 col3" >nan</td>
+      <td id="T_4eb0a_row114_col4" class="data row114 col4" >Ventricular tachycardia</td>
+      <td id="T_4eb0a_row114_col5" class="data row114 col5" >nan</td>
+      <td id="T_4eb0a_row114_col6" class="data row114 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row115_col0" class="data row115 col0" >FIBR_JELUD</td>
+      <td id="T_4eb0a_row115_col1" class="data row115 col1" >Target</td>
+      <td id="T_4eb0a_row115_col2" class="data row115 col2" >Binary</td>
+      <td id="T_4eb0a_row115_col3" class="data row115 col3" >nan</td>
+      <td id="T_4eb0a_row115_col4" class="data row115 col4" >Ventricular fibrillation</td>
+      <td id="T_4eb0a_row115_col5" class="data row115 col5" >nan</td>
+      <td id="T_4eb0a_row115_col6" class="data row115 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row116_col0" class="data row116 col0" >A_V_BLOK</td>
+      <td id="T_4eb0a_row116_col1" class="data row116 col1" >Target</td>
+      <td id="T_4eb0a_row116_col2" class="data row116 col2" >Binary</td>
+      <td id="T_4eb0a_row116_col3" class="data row116 col3" >nan</td>
+      <td id="T_4eb0a_row116_col4" class="data row116 col4" >Third-degree AV block</td>
+      <td id="T_4eb0a_row116_col5" class="data row116 col5" >nan</td>
+      <td id="T_4eb0a_row116_col6" class="data row116 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row117_col0" class="data row117 col0" >OTEK_LANC</td>
+      <td id="T_4eb0a_row117_col1" class="data row117 col1" >Target</td>
+      <td id="T_4eb0a_row117_col2" class="data row117 col2" >Binary</td>
+      <td id="T_4eb0a_row117_col3" class="data row117 col3" >nan</td>
+      <td id="T_4eb0a_row117_col4" class="data row117 col4" >Pulmonary edema</td>
+      <td id="T_4eb0a_row117_col5" class="data row117 col5" >nan</td>
+      <td id="T_4eb0a_row117_col6" class="data row117 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row118_col0" class="data row118 col0" >RAZRIV</td>
+      <td id="T_4eb0a_row118_col1" class="data row118 col1" >Target</td>
+      <td id="T_4eb0a_row118_col2" class="data row118 col2" >Binary</td>
+      <td id="T_4eb0a_row118_col3" class="data row118 col3" >nan</td>
+      <td id="T_4eb0a_row118_col4" class="data row118 col4" >Myocardial rupture </td>
+      <td id="T_4eb0a_row118_col5" class="data row118 col5" >nan</td>
+      <td id="T_4eb0a_row118_col6" class="data row118 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row119_col0" class="data row119 col0" >DRESSLER</td>
+      <td id="T_4eb0a_row119_col1" class="data row119 col1" >Target</td>
+      <td id="T_4eb0a_row119_col2" class="data row119 col2" >Binary</td>
+      <td id="T_4eb0a_row119_col3" class="data row119 col3" >nan</td>
+      <td id="T_4eb0a_row119_col4" class="data row119 col4" >Dressler syndrome</td>
+      <td id="T_4eb0a_row119_col5" class="data row119 col5" >nan</td>
+      <td id="T_4eb0a_row119_col6" class="data row119 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row120_col0" class="data row120 col0" >ZSN</td>
+      <td id="T_4eb0a_row120_col1" class="data row120 col1" >Target</td>
+      <td id="T_4eb0a_row120_col2" class="data row120 col2" >Binary</td>
+      <td id="T_4eb0a_row120_col3" class="data row120 col3" >nan</td>
+      <td id="T_4eb0a_row120_col4" class="data row120 col4" >Chronic heart failure</td>
+      <td id="T_4eb0a_row120_col5" class="data row120 col5" >nan</td>
+      <td id="T_4eb0a_row120_col6" class="data row120 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row121_col0" class="data row121 col0" >REC_IM</td>
+      <td id="T_4eb0a_row121_col1" class="data row121 col1" >Target</td>
+      <td id="T_4eb0a_row121_col2" class="data row121 col2" >Binary</td>
+      <td id="T_4eb0a_row121_col3" class="data row121 col3" >nan</td>
+      <td id="T_4eb0a_row121_col4" class="data row121 col4" >Relapse of the myocardial infarction</td>
+      <td id="T_4eb0a_row121_col5" class="data row121 col5" >nan</td>
+      <td id="T_4eb0a_row121_col6" class="data row121 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row122_col0" class="data row122 col0" >P_IM_STEN</td>
+      <td id="T_4eb0a_row122_col1" class="data row122 col1" >Target</td>
+      <td id="T_4eb0a_row122_col2" class="data row122 col2" >Binary</td>
+      <td id="T_4eb0a_row122_col3" class="data row122 col3" >nan</td>
+      <td id="T_4eb0a_row122_col4" class="data row122 col4" >Post-infarction angina</td>
+      <td id="T_4eb0a_row122_col5" class="data row122 col5" >nan</td>
+      <td id="T_4eb0a_row122_col6" class="data row122 col6" >no</td>
+    </tr>
+    <tr>
+      <td id="T_4eb0a_row123_col0" class="data row123 col0" >LET_IS</td>
+      <td id="T_4eb0a_row123_col1" class="data row123 col1" >Target</td>
+      <td id="T_4eb0a_row123_col2" class="data row123 col2" >Categorical</td>
+      <td id="T_4eb0a_row123_col3" class="data row123 col3" >nan</td>
+      <td id="T_4eb0a_row123_col4" class="data row123 col4" >Lethal outcome (cause)
+
+0: unknown (alive)
+
+1: cardiogenic shock
+
+2: pulmonary edema
+
+3: myocardial rupture
+
+4: progress of congestive heart failure
+
+5: thromboembolism
+
+6: asystole
+
+7: ventricular fibrillation</td>
+      <td id="T_4eb0a_row123_col5" class="data row123 col5" >nan</td>
+      <td id="T_4eb0a_row123_col6" class="data row123 col6" >no</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,319 @@
+name,role,type,demographic,description,units,missing_values
+ID,ID,Integer,,Record ID (ID): Unique identifier. Cannot be related to participant. It can be used for reference only.,,no
+AGE,Feature,Integer,Age,Age of patient.,,no
+SEX,Feature,Binary,Sex,"0: female, 1: male",,no
+INF_ANAM,Feature,Categorical,,"Quantity of myocardial infarctions in the anamnesis. 
+
+0: zero
+
+1: one
+
+2: two
+
+3: three and more",,yes
+STENOK_AN,Feature,Categorical,,"Exertional angina pectoris in the anamnesis. 
+
+0: never
+
+1: during the last year 
+
+2: one year ago
+
+3: two years ago
+
+4: three years ago
+
+5: 4-5 years ago",,yes
+FK_STENOK,Feature,Categorical,,"Functional class (FC) of angina pectoris in the last year. 
+
+0: there is no angina pectoris
+
+1: I FC
+
+2: II FC
+
+3: III FC
+
+4: IV FC",,yes
+IBS_POST,Feature,Categorical,,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital 
+
+0: none
+
+1: exertional angina pectoris
+
+2: unstable angina pectoris",,yes
+IBS_NASL,Feature,Binary,,"Heredity on CHD
+
+0: isn't burdened
+
+1: burdened",,yes
+GB,Feature,Categorical,,"Presence of an essential hypertension 
+
+0: there is no essential hypertension 
+
+1: Stage 1 
+
+2: Stage 2
+
+3: Stage 3",,yes
+SIM_GIPERT,Feature,Binary,,Symptomatic hypertension,,yes
+DLIT_AG,Feature,Categorical,,"there was no arterial hypertension
+
+1: one year
+
+2: two years
+
+3: three years
+
+4: four years
+
+5: five years
+
+6: 6-10 years
+
+7: more than 10 years",,yes
+ZSN_A,Feature,Categorical,,"Presence of chronic Heart failure (HF) in the anamnesis: Partially ordered attribute: there are two lines of severities:
+
+0<1<2<4,
+
+0<1<3<4.
+
+State 4 means simultaneous states 2 and 3
+
+
+
+0: there is no chronic heart failure
+
+1: I stage
+
+2: II stage (heart failure due to right 
+
+ventricular systolic dysfunction)
+
+3: II stage (heart failure due to left 
+
+ventricular systolic dysfunction)
+
+4: IIB stage (heart failure due to left and
+
+ right ventricular systolic dysfunction)",,yes
+nr_11,Feature,Binary,,Observing of arrhythmia in the anamnesis,,yes
+nr_01,Feature,Binary,,Premature atrial contractions in the anamnesis,,yes
+nr_02,Feature,Binary,,Premature ventricular contractions in the anamnesis,,yes
+nr_03,Feature,Binary,,Paroxysms of atrial fibrillation in the anamnesis,,yes
+nr_04,Feature,Binary,,A persistent form of atrial fibrillation in the anamnesis,,yes
+nr_07,Feature,Binary,,Ventricular fibrillation in the anamnesis,,yes
+nr_08,Feature,Binary,,Ventricular paroxysmal tachycardia in the anamnesis,,yes
+np_01,Feature,Binary,,First-degree AV block in the anamnesis,,yes
+np_04,Feature,Binary,,Third-degree AV block in the anamnesis,,yes
+np_05,Feature,Binary,,LBBB (anterior branch) in the anamnesis,,yes
+np_07,Feature,Binary,,Incomplete LBBB in the anamnesis,,yes
+np_08,Feature,Binary,,Complete LBBB in the anamnesis ,,yes
+np_09,Feature,Binary,,Incomplete RBBB in the anamnesis,,yes
+np_10,Feature,Binary,,Complete RBBB in the anamnesis,,yes
+endocr_01,Feature,Binary,,Diabetes mellitus in the anamnesis,,yes
+endocr_02,Feature,Binary,,Obesity in the anamnesis,,yes
+endocr_03,Feature,Binary,,Thyrotoxicosis in the anamnesis,,yes
+zab_leg_01,Feature,Binary,,Chronic bronchitis in the anamnesis,,yes
+zab_leg_02,Feature,Binary,,Obstructive chronic bronchitis in the anamnesis,,yes
+zab_leg_03,Feature,Binary,,Bronchial asthma in the anamnesis ,,yes
+zab_leg_04,Feature,Binary,,Chronic pneumonia in the anamnesis,,yes
+zab_leg_06,Feature,Binary,,Pulmonary tuberculosis in the anamnesis,,yes
+S_AD_KBRIG,Feature,Integer,,Systolic blood pressure according to Emergency Cardiology Team ,mmHg,yes
+D_AD_KBRIG,Feature,Integer,,Diastolic blood pressure according to Emergency Cardiology Team,mmHg,yes
+S_AD_ORIT,Feature,Integer,,Systolic blood pressure according to intensive care unit,mmHg,yes
+D_AD_ORIT,Feature,Integer,,Diastolic blood pressure according to intensive care unit,mmHg,yes
+O_L_POST,Feature,Binary,,Pulmonary edema at the time of admission to intensive care unit ,,yes
+K_SH_POST,Feature,Binary,,Cardiogenic shock at the time of admission to intensive care unit ,,yes
+MP_TP_POST,Feature,Binary,,"Paroxysms of atrial fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes
+SVT_POST,Feature,Binary,,"Paroxysms of supraventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes
+GT_POST,Feature,Binary,,"Paroxysms of ventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes
+FIB_G_POST,Feature,Binary,,"Ventricular fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes
+ant_im,Feature,Categorical,,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex",,yes
+lat_im,Feature,Categorical,,"Presence of a lateral myocardial infarction (left ventricular) (ECG changes in leads V5: V6 , I, AVL)
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex",,yes
+inf_im,Feature,Categorical,,"Presence of an inferior myocardial infarction (left ventricular) (ECG changes in leads III, AVF, II).
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex",,yes
+post_im,Feature,Categorical,,"Presence of a posterior myocardial infarction (left ventricular) (ECG changes in V7: V9, reciprocity changes in leads V1 – V3)
+
+0: there is no infarct in this location
+
+1: QRS has no changes
+
+2: QRS is like QR-complex
+
+3: QRS is like Qr-complex
+
+4: QRS is like QS-complex",,yes
+IM_PG_P,Feature,Binary,,Presence of a right ventricular myocardial infarction,,yes
+ritm_ecg_p_01,Feature,Binary,,ECG rhythm at the time of admission to hospital: sinus (with a heart rate 60-90),,yes
+ritm_ecg_p_02,Feature,Binary,,ECG rhythm at the time of admission to hospital: atrial fibrillation,,yes
+ritm_ecg_p_04,Feature,Binary,,ECG rhythm at the time of admission to hospital: atrial ,,yes
+ritm_ecg_p_06,Feature,Binary,,ECG rhythm at the time of admission to hospital: idioventricular,,yes
+ritm_ecg_p_07,Feature,Binary,,ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia) ,,yes
+ritm_ecg_p_08,Feature,Binary,,ECG rhythm at the time of admission to hospital: sinus with a heart rate below 60 (bradycardia),,yes
+n_r_ecg_p_01,Feature,Binary,,Premature atrial contractions on ECG at the time of admission to hospital ,,yes
+n_r_ecg_p_02,Feature,Binary,,Frequent premature atrial contractions on ECG at the time of admission to hospital,,yes
+n_r_ecg_p_03,Feature,Binary,,Premature ventricular contractions on ECG at the time of admission to hospital,,yes
+n_r_ecg_p_04,Feature,Binary,,Frequent premature ventricular contractions on ECG at the time of admission to hospital,,yes
+n_r_ecg_p_05,Feature,Binary,,Paroxysms of atrial fibrillation on ECG at the time of admission to hospital ,,yes
+n_r_ecg_p_06,Feature,Binary,,Persistent form of atrial fibrillation on ECG at the time of admission to hospital,,yes
+n_r_ecg_p_08,Feature,Binary,,Paroxysms of supraventricular tachycardia on ECG at the time of admission to hospital,,yes
+n_r_ecg_p_09,Feature,Binary,,Paroxysms of ventricular tachycardia on ECG at the time of admission to hospital,,yes
+n_r_ecg_p_10,Feature,Binary,,Ventricular fibrillation on ECG at the time of admission to hospital,,yes
+n_p_ecg_p_01,Feature,Binary,,Sinoatrial block on ECG at the time of admission to hospital,,yes
+n_p_ecg_p_03,Feature,Binary,,First-degree AV block on ECG at the time of admission to hospital ,,yes
+n_p_ecg_p_04,Feature,Binary,,Type 1 Second-degree AV block (Mobitz I/Wenckebach) on ECG at the time of admission to hospital,,yes
+n_p_ecg_p_05,Feature,Binary,,Type 2 Second-degree AV block (Mobitz II/Hay) on ECG at the time of admission to hospital,,yes
+n_p_ecg_p_06,Feature,Binary,,Third-degree AV block on ECG at the time of admission to hospital ,,yes
+n_p_ecg_p_07,Feature,Binary,,LBBB (anterior branch) on ECG at the time of admission to hospital ,,yes
+n_p_ecg_p_08,Feature,Binary,,LBBB (posterior branch) on ECG at the time of admission to hospital ,,yes
+n_p_ecg_p_09,Feature,Binary,,Incomplete LBBB on ECG at the time of admission to hospital ,,yes
+n_p_ecg_p_10,Feature,Binary,,Complete LBBB on ECG at the time of admission to hospital,,yes
+n_p_ecg_p_11,Feature,Binary,,Incomplete RBBB on ECG at the time of admission to hospital ,,yes
+n_p_ecg_p_12,Feature,Binary,,Complete RBBB on ECG at the time of admission to hospital,,yes
+fibr_ter_01,Feature,Binary,,Fibrinolytic therapy by Сеliasum 750k,,yes
+fibr_ter_02,Feature,Binary,,Fibrinolytic therapy by Сеliasum 1m IU,,yes
+fibr_ter_03,Feature,Binary,,Fibrinolytic therapy by Сеliasum 3m IU,,yes
+fibr_ter_05,Feature,Binary,,Fibrinolytic therapy by Streptase,,yes
+fibr_ter_06,Feature,Binary,,Fibrinolytic therapy by Сеliasum 500k,,yes
+fibr_ter_07,Feature,Binary,,Fibrinolytic therapy by Сеliasum 250k,,yes
+fibr_ter_08,Feature,Binary,,Fibrinolytic therapy by Сеliasum 1.5m IU,,yes
+GIPO_K,Feature,Binary,,Hypokalemia ( < 4 mmol/L),,yes
+K_BLOOD,Feature,Continuous,,Serum potassium content,mmol/L,yes
+GIPER_NA,Feature,Binary,,Increase of sodium in serum (more than 150 mmol/L),,yes
+NA_BLOOD,Feature,Continuous,,Serum sodium content,mmol/L,yes
+ALT_BLOOD,Feature,Continuous,,Serum AlAT content (ALT_BLOOD),IU/L,yes
+AST_BLOOD,Feature,Continuous,,Serum AsAT content,IU/L,yes
+KFK_BLOOD,Feature,Continuous,,Serum CPK content,IU/L,yes
+L_BLOOD,Feature,Continuous,,White blood cell count ,billions per liter,yes
+ROE,Feature,Continuous,,ESR (Erythrocyte sedimentation rate),мм,yes
+TIME_B_S,Feature,Categorical,,"Time elapsed from the beginning of the attack of CHD to the hospital
+
+1: less than 2 hours
+
+2: 2-4 hours
+
+3: 4-6 hours
+
+4: 6-8 hours
+
+5: 8-12 hours
+
+6: 12-24 hours
+
+7: more than 1 days
+
+8: more than 2 days
+
+9: more than 3 days",,yes
+R_AB_1_n,Feature,Categorical,,"Relapse of the pain in the first hours of the hospital period
+
+0: there is no relapse
+
+1: only one
+
+2: 2 times
+
+3: 3 or more times ",,yes
+R_AB_2_n,Feature,Categorical,,"Relapse of the pain in the second day of the hospital period
+
+0: there is no relapse
+
+1: only one
+
+2: 2 times
+
+3: 3 or more times ",,yes
+R_AB_3_n,Feature,Categorical,,"Relapse of the pain in the third day of the hospital period
+
+0: there is no relapse
+
+1: only one
+
+2: 2 times
+
+3: 3 or more times ",,yes
+NA_KB,Feature,Binary,,Use of opioid drugs by the Emergency Cardiology Team,,yes
+NOT_NA_KB,Feature,Binary,,Use of NSAIDs by the Emergency Cardiology Team ,,yes
+LID_KB,Feature,Binary,,Use of lidocaine by the Emergency Cardiology Team,,yes
+NITR_S,Feature,Binary,,Use of liquid nitrates in the ICU,,yes
+NA_R_1_n,Feature,Integer,,Use of opioid drugs in the ICU in the first hours of the hospital period ,,yes
+NA_R_2_n,Feature,Integer,,Use of opioid drugs in the ICU in the second day of the hospital period ,,yes
+NA_R_3_n,Feature,Integer,,Use of opioid drugs in the ICU in the third day of the hospital period ,,yes
+NOT_NA_1_n,Feature,Categorical,,"Use of NSAIDs in the ICU in the first hours of the hospital period
+
+0: no
+
+1: once
+
+2: twice
+
+3: three times
+
+4: four or more times",,yes
+NOT_NA_2_n,Feature,Integer,,Use of NSAIDs in the ICU in the second day of the hospital period ,,yes
+NOT_NA_3_n,Feature,Integer,,Use of NSAIDs in the ICU in the third day of the hospital period ,,yes
+LID_S_n,Feature,Binary,,Use of lidocaine in the ICU ,,yes
+B_BLOK_S_n,Feature,Binary,,Use of beta-blockers in the ICU,,yes
+ANT_CA_S_n,Feature,Binary,,Use of calcium channel blockers in the ICU,,yes
+GEPAR_S_n,Feature,Binary,,Use of а anticoagulants (heparin) in the ICU,,yes
+ASP_S_n,Feature,Binary,,Use of acetylsalicylic acid in the ICU ,,yes
+TIKL_S_n,Feature,Binary,,Use of Ticlid in the ICU,,yes
+TRENT_S_n,Feature,Binary,,Use of Trental in the ICU,,yes
+FIBR_PREDS,Target,Binary,,Atrial fibrillation,,no
+PREDS_TAH,Target,Binary,,Supraventricular tachycardia,,no
+JELUD_TAH,Target,Binary,,Ventricular tachycardia,,no
+FIBR_JELUD,Target,Binary,,Ventricular fibrillation,,no
+A_V_BLOK,Target,Binary,,Third-degree AV block,,no
+OTEK_LANC,Target,Binary,,Pulmonary edema,,no
+RAZRIV,Target,Binary,,Myocardial rupture ,,no
+DRESSLER,Target,Binary,,Dressler syndrome,,no
+ZSN,Target,Binary,,Chronic heart failure,,no
+REC_IM,Target,Binary,,Relapse of the myocardial infarction,,no
+P_IM_STEN,Target,Binary,,Post-infarction angina,,no
+LET_IS,Target,Categorical,,"Lethal outcome (cause)
+
+0: unknown (alive)
+
+1: cardiogenic shock
+
+2: pulmonary edema
+
+3: myocardial rupture
+
+4: progress of congestive heart failure
+
+5: thromboembolism
+
+6: asystole
+
+7: ventricular fibrillation",,no
