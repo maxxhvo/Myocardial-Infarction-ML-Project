@@ -36,5 +36,15 @@ More papers with same dataset: (there are more than this but just another)
 https://etasr.com/index.php/ETASR/article/view/9076/4331 (though they also talk a lot about feature engineering/extraction without specifics
 on features). 
 
-
-
+Likley Heavy Hitters (we should start with a correlation plot of just these before looking at more of the 111 imo)
+- Age [very likley always biggest predictor]
+- NA_BLOOD (Serum Sodium)
+- K_BLOOD (Serum Potassium)
+- GB (Essential Hypertension) - chronic high bloo pressure basically 
+- INF_ANAM (Previous Myocardial Infraction) - i predict this will be huge becuase a previous heart attack susbtantially increases
+your risk of a future one
+- STENOK_AN (Exertional Angina) - chest pain (big)
+- ZSN_A (Presence of Chronic Heart Failure)
+- S_AD_KBRIG / D_AD_KBRIG (Systolic & Diastolic Blood Pressure):
+- ALT, AST, & CPK (enzymes indicative of liver strain)
+- from ECG features: Rythm Variations & Infarct Location Info 
