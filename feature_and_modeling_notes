@@ -1,0 +1,40 @@
+#yasmine notes
+
+# notes on what we could consider
+# also this dataset is not new, i think it may have just recently been acquired by the UCI database
+# but there appear to be many papers on it , which is relieveing to me becuase that is very helpful!
+
+Possible Question: Can baseline demographic and medical history data collected at the time of admission (day 0)
+reliably predict short-term life-threatening complications (e.g., lethal outcome, ventricular fibrillation, pulmonary edema) 
+within the first 72 hours?
+
+# we could use this as a strong screening/flagging for doctors to be able to know
+#immediately upon admission if their patient is super high-risk. 
+
+They did a very unique modeling appraoch that is a very extensive neural network model but I still think it is relevant considering it 
+is with the same dataset but https://pmc.ncbi.nlm.nih.gov/articles/PMC12894713/pdf/41598_2026_Article_36798.pdf did a feature analysis map 
+and had some very interesting takeaways. Some of their features may not be relevant to us if we decide to use the question I proposed 
+(honestly super open to any question) but the ones that are would be age, presence of an essential hypertension, erythrocyte sedimentation
+rate, exertional angina in the anamesis, ERG rhythm at time of admission, etc. 
+
+What we should take note of is there is an entire paper that talks about how this dataset is imbalanced 
+(https://www.researchgate.net/publication/388021452_Feature_optimized_hybrid_model_for_prediction_of_myocardial_infarction)
+and that MOST of the patients do not have a lethal outcome, so I think we would have to focus on either mutliple outcomes or a different
+outcome from just "lethal outcomes". They did SO much feature selection but I did not find which features they landed on so....
+
+This paper is super relevant becuase she also did a prediction model for complications:
+(https://www.techrxiv.org/doi/full/10.36227/techrxiv.174284221.13239625/v1)
+She again talks about how imbalanced it is: "The majority of cases in this dataset
+consist of patients who did not develop myocardial infarction
+complications as opposed to patients who did." 
+
+She also has many figures on features selected. Many of the features are post day 0, but some of the others she had were
+diastolic blood pressure according to ICU, presence of chronic heart failure in anamesis, systolic blood pressure according to ICU, 
+cadiogenic shock at time of ICU, etc. 
+
+More papers with same dataset: (there are more than this but just another)
+https://etasr.com/index.php/ETASR/article/view/9076/4331 (though they also talk a lot about feature engineering/extraction without specifics
+on features). 
+
+
+
