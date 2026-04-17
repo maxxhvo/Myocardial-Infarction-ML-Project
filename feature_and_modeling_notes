@@ -48,3 +48,48 @@ your risk of a future one
 - S_AD_KBRIG / D_AD_KBRIG (Systolic & Diastolic Blood Pressure):
 - ALT, AST, & CPK (enzymes indicative of liver strain)
 - from ECG features: Rythm Variations & Infarct Location Info 
+
+
+#
+# Brandon's Notes (2026-04-16)
+#
+# ---
+#
+# Feature Exploration & Clinical Intuition
+#
+# 1. AGE: Consistently highlighted as a top predictor in the literature. Older age increases risk for complications and adverse outcomes post-MI. Distribution in our data looks reasonable, but we should check for outliers or implausible values.
+#
+# 2. GB (Essential Hypertension): Chronic high blood pressure is a major cardiovascular risk factor. The data dictionary codes this as 0 (none) to 3 (Stage 3). Several papers (see Yasmine's links) emphasize hypertension as a key feature for both acute and chronic complications. Worth checking for missingness and distribution across outcome groups.
+#
+# 3. INF_ANAM (Previous MI): Prior myocardial infarction is a strong predictor of future events. The variable is categorical (0: none, 1: one, 2: two, 3: three+). Literature supports its inclusion as a "heavy hitter" for risk stratification.
+#
+# 4. ZSN_A (Chronic Heart Failure in Anamnesis): Indicates pre-existing heart failure, with gradations of severity. The data dictionary details the coding (0: none, 1: I, 2: II R, 3: II L, 4: IIB both). This is both clinically and statistically important, as baseline heart failure status impacts prognosis.
+#
+# 5. S_AD_KBRIG / D_AD_KBRIG (Systolic/Diastolic BP): Blood pressure at admission is a classic risk marker. Should be included in early models and checked for missingness/outliers.
+#
+# 6. NA_BLOOD, K_BLOOD: Electrolyte disturbances (esp. sodium, potassium) are associated with worse outcomes. These are continuous variables; check for clinical plausibility and missing data.
+#
+# 7. STENOK_AN (Exertional Angina): Categorical, reflects chronic ischemic burden. Literature suggests it is relevant for both acute and chronic complications.
+#
+# 8. ECG Features: Rhythm variations and infarct location (e.g., ritm_ecg_p_01, ant_im, lat_im, inf_im, post_im) are well represented in the metadata. These are often used in published models and may provide incremental value.
+#
+# 9. Enzymes (ALT, AST, CPK): Markers of tissue damage and stress. May be useful for acute complication prediction.
+#
+#
+# Metadata Insights:
+# - The data dictionary is detailed and includes missingness info. Most key features have no missing values, but some (e.g., GB, INF_ANAM, ZSN_A) may have missing entries. Imputation strategies will be needed.
+# - Categorical variables are well-coded; mapping these for interpretability in plots and models is important.
+#
+# Literature Review:
+# - Many papers highlight the class imbalance problem (most patients do not have lethal outcomes or complications). This will affect model choice and evaluation metrics.
+# - Feature selection varies, but age, hypertension, prior MI, and heart failure status are consistently important.
+# - Some models use only baseline (admission) data, which aligns with our clinical question: Can we predict early complications using only data available at admission?
+#
+# Next Steps / Plan:
+# - Correlation plot of "heavy hitter" features vs. outcomes.
+# - Check missingness and distributions for all candidate predictors.
+# - Consider clinical plausibility and ease of use for each feature.
+# - Reconvene Thursday after class to finalize feature set and modeling approach before meeting with professor.
+#
+# Bring these notes to the group meeting for discussion and feedback.
+
