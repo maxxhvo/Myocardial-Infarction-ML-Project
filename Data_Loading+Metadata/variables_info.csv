@@ -289,6 +289,8 @@ GEPAR_S_n,Feature,Binary,,Use of а anticoagulants (heparin) in the ICU,,yes
 ASP_S_n,Feature,Binary,,Use of acetylsalicylic acid in the ICU ,,yes
 TIKL_S_n,Feature,Binary,,Use of Ticlid in the ICU,,yes
 TRENT_S_n,Feature,Binary,,Use of Trental in the ICU,,yes
+
+
 FIBR_PREDS,Target,Binary,,Atrial fibrillation,,no
 PREDS_TAH,Target,Binary,,Supraventricular tachycardia,,no
 JELUD_TAH,Target,Binary,,Ventricular tachycardia,,no
