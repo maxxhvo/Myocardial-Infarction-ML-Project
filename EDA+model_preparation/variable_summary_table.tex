@@ -1,0 +1,47 @@
+\begin{longtable}{lllll}
+\caption{Summary of variables included in the analysis.} \label{tab:variable_summary} \\
+\toprule
+Variable & Description & Type & Missing \% & Notes \\
+\midrule
+\endfirsthead
+\caption[]{Summary of variables included in the analysis.} \\
+\toprule
+Variable & Description & Type & Missing \% & Notes \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+AGE & Patient age & Numeric & 0.470000 & years \\
+S\_AD\_ORIT & Systolic BP (ICU) & Numeric & 15.710000 & mmHg \\
+D\_AD\_ORIT & Diastolic BP (ICU) & Numeric & 15.710000 & mmHg \\
+NA\_BLOOD & Serum sodium & Numeric & 22.060000 & mmol/L \\
+K\_BLOOD & Serum potassium & Numeric & 21.820000 & mmol/L \\
+L\_BLOOD & White blood cell count & Numeric & 7.350000 & 10\textasciicircum 9/L \\
+ROE\_log & Erythrocyte Sedimentation Rate & Numeric & 11.940000 & mm (log, transformed) \\
+ALT\_BLOOD\_log & Alanine Aminotransferase & Numeric & 16.710000 & IU/L (log, transformed) \\
+AST\_BLOOD\_log & Aspartate Aminotransferase & Numeric & 16.760000 & IU/L (log, transformed) \\
+SEX & Sex (male/female) & Binary & No Missing & No: 37.4\%, Yes: 62.6\% \\
+endocr\_01 & Diabetes mellitus & Binary & 0.650000 & No: 86.5\%, Yes: 13.5\% \\
+O\_L\_POST & Pulmonary edema at admission & Binary & 0.710000 & No: 93.5\%, Yes: 6.5\% \\
+MP\_TP\_POST & Atrial fibrillation at admission & Binary & 0.820000 & No: 93.2\%, Yes: 6.8\% \\
+ant\_im & Anterior MI (ECG) & Binary & No Missing & No: 43.7\%, Yes: 56.3\% (binarized) \\
+lat\_im & Lateral MI (ECG) & Binary & No Missing & No: 38.6\%, Yes: 61.4\% (binarized) \\
+inf\_im & Inferior MI (ECG) & Binary & No Missing & No: 59.8\%, Yes: 40.2\% (binarized) \\
+post\_im & Posterior MI (ECG) & Binary & No Missing & No: 84.8\%, Yes: 15.2\% (binarized) \\
+ritm\_ecg\_p\_01 & Sinus rhythm on ECG & Binary & 8.940000 & No: 33.5\%, Yes: 66.5\% \\
+any\_pulmonary\_disease & Chronic Bronchitis/Asthma & Binary & No Missing & No: 82.8\%, Yes: 17.2\% \\
+any\_arrhythmia & Any arrhythmia (ECG, grouped) & Binary & No Missing & No: 73.8\%, Yes: 26.2\% \\
+any\_conduction\_block & Any conduction block (ECG, grouped) & Binary & No Missing & No: 80.8\%, Yes: 19.2\% \\
+INF\_ANAM & Prior MI count & Ordinal & 0.240000 & 4 levels (ordinal trend consistent) \\
+IBS\_POST & Recent CHD severity & Ordinal & 3.000000 & 3 levels (ordinal trend consistent) \\
+GB & Hypertension stage & Ordinal & 0.530000 & 4 levels (ordinal trend consistent) \\
+ZSN\_A\_recode & CHF history severity (recoded) & Categorical & No Missing & 4 levels (binned) \\
+time\_bin & Time to hospital (binned) & Categorical & No Missing & 4 levels (binned) \\
+angina\_timing & Timing of angina & Categorical & No Missing & 5 levels (binned) \\
+angina\_severity & Angina severity & Categorical & No Missing & 4 levels (binned) \\
+htn\_duration & Hypertension duration & Categorical & No Missing & 5 levels (binned) \\
+\end{longtable}
